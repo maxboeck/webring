@@ -9,7 +9,7 @@ export const redirect = site => {
             Location: location,
             'Cache-Control': 'no-cache, no-store, must-revalidate'
         },
-        body: `Redirecting to "${site.title}"`
+        body: `Redirecting..."`
     }
 }
 
