@@ -11,3 +11,5 @@ Inspired by posts from
 ## How to join a ring
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/maxboeck/webring)
+
+[next](https://webrings.netlify.com/next)
