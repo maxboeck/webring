@@ -1,0 +1,17 @@
+---
+permalink: feeds.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+
+<opml version="1.0">
+    <head>
+        <title>{{ meta.title }} Member Feeds</title>
+    </head>
+    <body>
+    {% for member in members %}
+        {% if member.feed %}
+        <outline type="rss" text="{{ member.title }}" title="{{ member.title }}" xmlUrl="{{ member.feed }}" htmlUrl="{{ member.url }}" />
+        {% endif %}
+    {% endfor %}
+    </body>
+</opml>
