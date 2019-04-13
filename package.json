@@ -9,8 +9,7 @@
     "url": "http://github.com/maxboeck/webring"
   },
   "scripts": {
-    "start": "gulp build:dev && yarn run serve",
-    "serve": "eleventy serve",
+    "start": "gulp build && eleventy serve",
     "build": "gulp build && yarn run build:lambda",
     "serve:lambda": "netlify-lambda serve lambda",
     "build:lambda": "netlify-lambda build lambda"
@@ -18,7 +17,6 @@
   "dependencies": {
     "@11ty/eleventy": "^0.8.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
-    "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.1",
