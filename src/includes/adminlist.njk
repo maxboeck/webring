@@ -1,0 +1,7 @@
+<ul class="adminlist">
+    {% for admin in meta.admins %}
+    <li>
+        <a href="{{ admin.url }}">{{ admin.name }}</a>
+    </li>
+    {% endfor %}
+</ul>

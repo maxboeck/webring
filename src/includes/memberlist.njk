@@ -1,0 +1,8 @@
+<ol class="memberlist">
+    {% for member in members %}
+    <li>
+        <strong>{{ member.title }}</strong><br />
+        <a href="{{ member.url }}">{{ member.url }}</a>
+    </li>
+    {% endfor %}
+</ol>
