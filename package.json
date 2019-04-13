@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "gulp build && eleventy --serve",
-    "build": "gulp build && yarn run build:lambda",
+    "build": "gulp build && eleventy && yarn run build:lambda",
     "serve:lambda": "netlify-lambda serve _lambda",
     "build:lambda": "netlify-lambda build _lambda"
   },
