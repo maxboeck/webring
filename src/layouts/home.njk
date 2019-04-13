@@ -1,18 +1,15 @@
 ---
-layout: page
+layout: base
 ---
 
 <h1>{{ meta.title }}</h1>
 
 <p>{{ meta.description }}</p>
 
-<h2>Members</h2>
+<h2>Members ({{ members | length }})</h2>
 {% include 'memberlist.njk' %}
 
-<h2>Admins</h2>
+<h2>Admins ({{ meta.admins | length }})</h2>
 {% include 'adminlist.njk' %}
 
-<h2>How to join</h2>
-
-<h2>Want to host your own webring?</h2>
-
+{{ content | safe }}
