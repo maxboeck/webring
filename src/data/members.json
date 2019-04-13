@@ -2,25 +2,21 @@
     {
         "title": "Max Böck",
         "url": "https://mxb.dev/",
-        "feed": "https://mxb.dev/feed.xml",
-        "active": true
+        "feed": "https://mxb.dev/feed.xml"
     },
     {
         "title": "Test Site",
         "url": "https://github.com/maxboeck/",
-        "feed": null,
-        "active": true
+        "feed": null
     },
     {
         "title": "Manuel Matuzovic",
         "url": "https://www.matuzo.at/",
-        "feed": "https://www.matuzo.at/feed.xml",
-        "active": true
+        "feed": "https://www.matuzo.at/feed.xml"
     },
     {
         "title": "Charlie Owen",
         "url": "https://www.sonniesedge.net/",
-        "feed": null,
-        "active": true
+        "feed": null
     }
 ]
