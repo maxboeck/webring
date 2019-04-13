@@ -1,8 +1,9 @@
 <div class="webring">
     <h1 class="webring__title">{{ meta.title }}</h1>
     <p class="webring__desc">{{ meta.description }}</p>
+    <a href="/coc">Code of Conduct</a>
         
-    <div class="webring__members">
+    <div class="webring__body">
         <h2>Members ({{ members | length }})</h2>
         <ol class="memberlist">
             {% for member in members %}
@@ -11,5 +12,13 @@
             </li>
             {% endfor %}
         </ol>
+
+        <h2>Admins</h2>
+        <p>
+        {% for admin in meta.admins %}
+            <a href="{{ admin.url }}">{{ admin.name }}</a>
+            {% if not loop.last %}, {% endif %}
+        {% endfor %}
+        </p>
     </div>
 </div>
