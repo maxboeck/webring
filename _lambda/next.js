@@ -1,9 +1,8 @@
-import { redirect, getNext } from './common/utils'
+import { redirect, getNext, getRandom } from './common/utils'
 
 exports.handler = function(event, context, callback) {
-    const { host } = event.headers
-    console.log(event.headers)
-    const next = getNext(host)
+    const { referer } = event.headers
+    const next = getNext(referer) || getRandom()
 
     callback(null, redirect(next))
 }

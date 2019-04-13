@@ -2,18 +2,17 @@ import meta from '../../src/data/meta'
 import members from '../../src/data/members'
 
 export const redirect = site => {
-    const location = site && site.url ? site.url : meta.url
     return {
         statusCode: 302,
         headers: {
-            Location: location,
+            Location: site.url,
             'Cache-Control': 'no-cache, no-store, must-revalidate'
         },
-        body: `Redirecting..."`
+        body: `Redirecting to "${site.title}"`
     }
 }
 
-export const getIndex = url => members.findIndex(site => site.url.includes(url))
+export const getIndex = url => members.findIndex(site => url.includes(site.url))
 
 export const getNext = url => {
     const index = getIndex(url)
@@ -35,6 +34,8 @@ export const getPrevious = url => {
 
 export const getRandom = url => {
     const randomIndex = Math.floor(Math.random() * members.length)
-    const filtered = members.filter(site => !site.url.includes(url))
-    return filtered[randomIndex]
+    const sites = url
+        ? members.filter(site => !url.includes(site.url))
+        : members
+    return sites[randomIndex]
 }
