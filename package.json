@@ -9,7 +9,7 @@
     "url": "http://github.com/maxboeck/webring"
   },
   "scripts": {
-    "start": "gulp build && eleventy --serve && yarn run serve:lambda",
+    "start": "gulp build && eleventy --serve",
     "build": "gulp build && yarn run build:lambda",
     "serve:lambda": "netlify-lambda serve _lambda",
     "build:lambda": "netlify-lambda build _lambda"
