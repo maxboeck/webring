@@ -1,5 +1,5 @@
-import meta from '../src/data/meta'
-import members from '../src/data/members'
+import meta from '../../src/data/meta'
+import members from '../../src/data/members'
 
 export const redirect = site => {
     const location = site && site.url ? site.url : meta.url
