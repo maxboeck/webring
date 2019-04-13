@@ -1,0 +1,12 @@
+{
+    "title": "An Example Webring",
+    "description": "Lorem Ipsum dolor, this is a webring about community XY.",
+    "url": "https://mywebring.netlify.com",
+    "repo": "https://github.com/maxboeck/webring",
+    "admins": [
+        {
+            "name": "Max Böck",
+            "url": "https://github.com/maxboeck"
+        }
+    ]
+}
