@@ -1,0 +1,56 @@
+// Colors
+//
+// Grayscale.
+
+$gray-darkest: #121212;
+$gray-darker: #323232;
+$gray-dark: #4a4a4a;
+$gray: #a0a0a0;
+$gray-light: #c5c6c6;
+$gray-lighter: #e6e6e6;
+$gray-lightest: #f6f8fa;
+
+// Brand Colors
+
+$brand-yellow: #ffd223;
+
+//Color Mappings
+
+$brand-primary: $brand-yellow;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: white;
+$body-color: $gray-darker;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+$font-family-base: $font-family-system;
+$font-weight-base: 400;
+$font-size-base: 1rem;
+$line-height-base: 1.625;
+
+// Animation
+//
+// Default easing curves, Transitions, etc
+
+$animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1);
+$animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1);
+$animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1);
+$animation-curve-default: $animation-curve-fast-out-slow-in;
+
+// Misc Shared
+//
+// common shared styles
+
+$border-radius: 0;
+$spacing-y: 3rem;
+$box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);

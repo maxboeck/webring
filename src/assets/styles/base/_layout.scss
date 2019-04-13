@@ -1,0 +1,19 @@
+html {
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: $font-family-system;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $body-color;
+    text-align: left;
+    background-color: $body-bg;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 640px;
+}

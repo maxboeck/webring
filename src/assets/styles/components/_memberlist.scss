@@ -1,0 +1,16 @@
+.memberlist {
+    max-height: 250px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    &__item {
+        border-bottom: 1px solid #ccc;
+        &:nth-child(even) {
+            background-color: rgba(50, 50, 50, 0.1);
+        }
+    }
+    &__link {
+        display: block;
+        padding: 0.25rem;
+    }
+}
