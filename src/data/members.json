@@ -1,16 +1,21 @@
 [
     {
-        "title": "A Demo Webring Site",
+        "title": "Max Böck",
         "url": "https://mxb.dev/",
         "active": true
     },
     {
-        "title": "Another Site",
+        "title": "Test Site",
+        "url": "https://github.com/maxboeck/",
+        "active": true
+    },
+    {
+        "title": "Manuel Matuzovic",
         "url": "https://www.matuzo.at/",
         "active": true
     },
     {
-        "title": "And Yet Another One",
+        "title": "Charlie Owen",
         "url": "https://www.sonniesedge.net/",
         "active": true
     }
