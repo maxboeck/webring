@@ -1,14 +1,16 @@
-import meta from '../../src/data/meta'
 import members from '../../src/data/members'
 
 export const redirect = site => {
+    const statusMessage = `redirecting to: ${site.title}`
+    console.log(statusMessage)
+
     return {
         statusCode: 302,
         headers: {
             Location: site.url,
             'Cache-Control': 'no-cache, no-store, must-revalidate'
         },
-        body: `Redirecting to "${site.title}"`
+        body: statusMessage
     }
 }
 
@@ -20,6 +22,7 @@ export const getNext = url => {
         const nextIndex = index < members.length - 1 ? index + 1 : 0
         return members[nextIndex]
     }
+    console.log('referrer position not found.')
     return null
 }
 
@@ -29,6 +32,7 @@ export const getPrevious = url => {
         const prevIndex = index > 0 ? index - 1 : members.length - 1
         return members[prevIndex]
     }
+    console.log('referrer position not found.')
     return null
 }
 
