@@ -12,4 +12,6 @@ Inspired by posts from
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/maxboeck/webring)
 
-[next](https://webrings.netlify.com/next)
+[⬅️](https://webrings.netlify.com/prev)
+[😜](https://webrings.netlify.com/random)
+[➡️](https://webrings.netlify.com/next)
