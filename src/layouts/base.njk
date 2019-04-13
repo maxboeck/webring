@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>{{ meta.title }}</title>
+    <title>{{ title or meta.title }}</title>
 
     <link rel="stylesheet" href="{{ '/assets/styles/main.css' | url }}">
+    <link type="application/atom+xml" rel="alternate" href="feeds.xml" title="{{ meta.title }}">
 </head>
 <body>
-    {{ content | safe }}
+    <div class="container">
+        {{ content | safe }}
+    </div>
 </body>
 </html>
 

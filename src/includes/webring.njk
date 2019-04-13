@@ -1,0 +1,15 @@
+<div class="webring">
+    <h1 class="webring__title">{{ meta.title }}</h1>
+    <p class="webring__desc">{{ meta.description }}</p>
+        
+    <div class="webring__members">
+        <h2>Members ({{ members | length }})</h2>
+        <ol class="memberlist">
+            {% for member in members %}
+            <li class="memberlist__item">
+                <a href="{{ member.url }}" class="memberlist__link">{{ member.title }}</a>
+            </li>
+            {% endfor %}
+        </ol>
+    </div>
+</div>

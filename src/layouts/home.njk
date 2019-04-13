@@ -2,14 +2,8 @@
 layout: base
 ---
 
-<h1>{{ meta.title }}</h1>
+{% include 'webring.njk' %}
 
-<p>{{ meta.description }}</p>
-
-<h2>Members ({{ members | length }})</h2>
-{% include 'memberlist.njk' %}
-
-<h2>Admins ({{ meta.admins | length }})</h2>
-{% include 'adminlist.njk' %}
-
-{{ content | safe }}
+<div class="markdown">
+    {{ content | safe }}
+</div>
