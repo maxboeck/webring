@@ -1,14 +1,18 @@
 .memberlist {
     max-height: 250px;
-    overflow-y: scroll;
+    border: 1px solid $gray-lighter;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 
     &__item {
-        border-bottom: 1px solid #ccc;
+        &:not(:last-child) {
+            border-bottom: 1px solid $gray-lighter;
+        }
         &:nth-child(even) {
-            background-color: rgba(122, 122, 122, 0.1);
+            background-color: rgba($gray-light, 0.1);
         }
     }
+
     &__link {
         display: block;
         padding: 0.25rem;

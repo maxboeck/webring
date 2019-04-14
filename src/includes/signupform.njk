@@ -1,4 +1,4 @@
-<form name="signup" method="POST" data-netlify="true">
+<form class="form" name="signup" method="POST" data-netlify="true" netlify-honeypot="bot">
     <p>
         <label for="input-name">Site Name:</label>
         <input type="text" name="name" id="input-name" placeholder="Frank's awesome site" />
@@ -11,5 +11,9 @@
         <label for="input-feed">RSS Feed URL (optional):</label>
         <input type="url" name="feed" id="input-feed" placeholder="https://www.franks-site.org/feed.xml" />
     </p>
-    <button type="submit">Please Add Me!</button>
+    <div class="sr-only" aria-hidden="true">
+        <label for="input-bot">Don’t fill this out if you're human:</label>
+        <input type="text" name="bot" id="input-bot" />
+    </div>
+    <button type="submit" class="btn btn--primary">Please Add Me!</button>
 </form>

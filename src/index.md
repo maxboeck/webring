@@ -4,19 +4,17 @@ layout: home
 
 ## What's this?
 
+A community of sites around a common topic, also known as a [webring](). Kids in the 90s used to do it.
+
 ## How to join
 
-To add your site to the webring, [open a pull request]({{ meta.repo }}/compare) and supply the following information:
+To join the webring, [open a pull request]({{ meta.repo }}/compare) and supply the name and URL of your site. If you publish a RSS feed, you can provide that as well to add it to the central index.
 
-* Name of your site
-* URL of your site
-* URL of your RSS feed (optional)
-
-Alternatively, you can use this form to sign up:
+If you don't have a Github account, you can also use this form to sign up:
 
 {% include 'signupform.njk' %}
 
-The webring admins will then look at your site and determine if it will be included.
+The webring admins will then look at your site and determine if it's a good fit.
 
 ## Add the Snippet
 

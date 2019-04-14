@@ -1,7 +1,14 @@
-<div class="webring">
-    <h1 class="webring__title">{{ meta.title }}</h1>
-    <p class="webring__desc">{{ meta.description }}</p>
-    <a href="/coc">Code of Conduct</a>
+<article class="webring">
+    <header class="webring__header">
+        <h1 class="webring__title">{{ meta.title }}</h1>
+        
+        {% if meta.image %}
+        <img class="webring__image" src="/assets/images/{{ meta.image }}" width="100" height="100" alt="">
+        {% endif %}
+
+        <p class="webring__desc">{{ meta.description }}</p>
+        <a href="/coc">Code of Conduct</a>
+    </header>
         
     <div class="webring__body">
         <h2>Members ({{ members | length }})</h2>
@@ -22,4 +29,4 @@
         {% endfor %}
         </p>
     </div>
-</div>
+</article>
