@@ -17,8 +17,9 @@ See the [Demo Site](https://webringdemo.netlify.com)
 
 1. Fork this repo
 2. Edit `src/data/meta.json` and fill in your community info
-3. Remove the demo members in `src/data/members.json`
-4. Deploy your site to Netlify
-5. After you've set a domain, enter that in `meta.json` as well.
+3. Add an avatar image for your ring to `src/assets/images`
+4. Remove the demo members in `src/data/members.json`
+5. Deploy your site to Netlify
+6. After you've set a domain, enter that in `meta.json` as well.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/maxboeck/webring)
