@@ -20,7 +20,7 @@ The webring admins will then look at your site and handle your request.
 
 ```html 
 <webring-badge>
-    <p>Member of <a href="{{ meta.url }}">{{ meta.title }}</a></p>
+    <p>Member of the <a href="{{ meta.url }}">{{ meta.title }}</a> webring</p>
     <a href="{{ meta.url }}/prev">Previous</a>
     <a href="{{ meta.url }}/random">Random</a>
     <a href="{{ meta.url }}/next">Next</a>
