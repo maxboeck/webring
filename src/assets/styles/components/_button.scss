@@ -18,4 +18,31 @@
 .btn--primary {
     color: #fff;
     background-color: $brand-primary;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.btn--github {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    background-color: #231f20;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    svg {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        margin-right: 0.5em;
+        fill: currentColor;
+    }
 }

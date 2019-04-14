@@ -14,8 +14,10 @@ pre[class*='language-'] {
 }
 
 pre[class*='language-'] {
+    display: block;
     border-radius: 0.5rem;
     padding: 1.5rem;
+    overflow-x: auto;
 }
 
 .token.comment,
