@@ -18,13 +18,17 @@ The webring admins will then look at your site and handle your request.
 
 ## Add the badge
 
-If you want to make your own badge, use these three links to connect to the webring:
-
 ```html 
-<a href="{{ meta.url }}/prev">Previous</a>
-<a href="{{ meta.url }}/random">Random</a>
-<a href="{{ meta.url }}/next">Next</a>
+<div class="webring-badge-embed">
+    <p>Member of <a href="{{ meta.url }}">{{ meta.title }}</a></p>
+    <a href="{{ meta.url }}/prev">Previous</a>
+    <a href="{{ meta.url }}/random">Random</a>
+    <a href="{{ meta.url }}/next">Next</a>
+</div>
+<script async src="{{ meta.url }}/embed.js" charset="utf-8"></script>
 ```
+
+{% include 'snippet.njk' %}
 
 ## Want to host your own webring?
 
