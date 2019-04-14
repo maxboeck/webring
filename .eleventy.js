@@ -9,6 +9,7 @@ module.exports = function(config) {
     config.addLayoutAlias('page', 'page.njk')
 
     config.addPassthroughCopy('src/assets/images')
+    config.addPassthroughCopy('src/assets/styles/main.css')
 
     config.addTransform('htmlmin', function(content, outputPath) {
         if (outputPath.endsWith('.html')) {
