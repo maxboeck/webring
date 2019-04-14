@@ -1,6 +1,6 @@
 {
     "title": "An Example Webring",
-    "description": "This is just a demo of a community of sites. It could be about anything. For this one, let's say dogs.",
+    "description": "This is just a demo of a community of sites. It could be about anything - Bands, Craft Beer, Accessibility... For this one, let's say dogs.",
     "image": "logo.jpg",
     "url": "https://webringdemo.netlify.com",
     "repo": "https://github.com/maxboeck/webring",
