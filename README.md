@@ -1,7 +1,7 @@
 # Webring Starter Kit
 
 A boilerplate to host your own community of sites, also known as a [webring](https://en.wikipedia.org/wiki/Webring).  
-Inspired by this post from [Charlie Owen](https://www.sonniesedge.net/posts/webrings).
+Inspired by [this post](https://www.sonniesedge.net/posts/webrings) from Charlie Owen.
 
 Uses [Eleventy](https://www.11ty.io) and [Netlify](https://www.netlify.com/) to build a central directory for member sites. People can link to `/prev`, `/random` and `/next` and be redirected to members of the ring.
 
