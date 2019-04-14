@@ -1,0 +1,60 @@
+---
+permalink: 'embed.js'
+---
+class WebringBadge extends HTMLElement {
+    constructor() {
+        super();
+
+        this.title = '{{ meta.title }}';
+        this.url = '{{ meta.url }}';
+        this.image = this.url + '/assets/images/{{ meta.image }}';
+        this.membercount = {{ members | length}};
+
+        this.shadowObj = this.attachShadow({ mode: 'open' });
+        this.render();
+    }
+
+    getStyles() {
+        return `
+        <style>
+          :host {
+            display: block;
+            font-family: sans-serif;
+          }
+  
+          .webring-badge {
+            background-color: #FFF;
+          }
+          
+        </style>
+      `;
+    }
+
+    getTemplate() {
+        return `
+          ${this.getStyles()}
+          <div class="webring-badge">
+            <div class="webring-badge__header">
+              <img class="webring-badge__image" src="${this.image}" alt="" />
+              <div class="webring-badge__description">
+                <h3 class="webring-badge__title">
+                  <a href="${this.url}">${this.title}</a>
+                </h3>
+                <p>${this.membercount} Members</p>
+              </div>
+            </div>
+            <p class="webring-badge__links">
+              <a href="${this.url}/prev">Previous</a>
+              <a href="${this.url}/random">Random</a>
+              <a href="${this.url}/next">Next</a>
+            </p>
+          </div>
+        `;
+    }
+
+    render() {
+        this.shadowObj.innerHTML = this.getTemplate();
+    }
+}
+
+customElements.define('webring-badge', WebringBadge);
