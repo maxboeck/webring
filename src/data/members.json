@@ -5,14 +5,19 @@
         "feed": "https://mxb.dev/feed.xml"
     },
     {
-        "title": "Test Site",
-        "url": "https://github.com/maxboeck/",
+        "title": "Eleventy",
+        "url": "https://www.11ty.io/",
         "feed": null
     },
     {
         "title": "Manuel Matuzovic",
         "url": "https://www.matuzo.at/",
         "feed": "https://www.matuzo.at/feed.xml"
+    },
+    {
+        "title": "Netlify",
+        "url": "https://www.netlify.com/",
+        "feed": null
     },
     {
         "title": "Charlie Owen",

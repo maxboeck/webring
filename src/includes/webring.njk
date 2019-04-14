@@ -1,32 +1,28 @@
 <article class="webring">
     <header class="webring__header">
-        <h1 class="webring__title">{{ meta.title }}</h1>
-        
         {% if meta.image %}
-        <img class="webring__image" src="/assets/images/{{ meta.image }}" width="100" height="100" alt="">
+        <img class="webring__image" src="/assets/images/{{ meta.image }}" width="70" height="70" alt="">
         {% endif %}
 
-        <p class="webring__desc">{{ meta.description }}</p>
-        <a href="/coc">Code of Conduct</a>
+        <div class="webring__description">
+            <h1 class="webring__title">{{ meta.title }}</h1>
+            <p>{{ meta.description }}</p>
+            <a href="/coc">Code of Conduct</a>
+        </div>
     </header>
         
     <div class="webring__body">
-        <h2>Members ({{ members | length }})</h2>
-        <ol class="memberlist">
+        <div class="webring__subtitle">
+            <h2>Members ({{ members | length }})</h2>
+            <a href="/feeds.xml">RSS Feeds</a>
+        </div>
+
+        <ol class="webring__memberlist">
             {% for member in members %}
-            <li class="memberlist__item">
-                <a href="{{ member.url }}" class="memberlist__link">{{ member.title }}</a>
+            <li class="webring__member">
+                <a href="{{ member.url }}" class="webring__link">{{ member.title }}</a>
             </li>
             {% endfor %}
         </ol>
-        <p><a href="/feeds.xml">RSS Feeds</a></p>
-
-        <h2>Admins</h2>
-        <p>
-        {% for admin in meta.admins %}
-            <a href="{{ admin.url }}">{{ admin.name }}</a>
-            {% if not loop.last %}, {% endif %}
-        {% endfor %}
-        </p>
     </div>
 </article>

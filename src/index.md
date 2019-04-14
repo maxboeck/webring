@@ -33,5 +33,3 @@ If you want to start your own webring, here's how to do it:
 3. [Deploy it to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/maxboeck/webring)
 4. Edit the metadata and provide your Netlify Domain and the repository's URL.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/maxboeck/webring)
-

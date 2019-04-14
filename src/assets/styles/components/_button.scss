@@ -1,0 +1,22 @@
+.btn {
+    border: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
+        0 2px 4px 0 rgba(14, 30, 37, 0.12);
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.618em;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    vertical-align: middle;
+}
+
+.btn--primary {
+    color: #fff;
+    background-color: $brand-primary;
+}

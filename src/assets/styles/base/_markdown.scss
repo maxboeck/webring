@@ -1,0 +1,90 @@
+.markdown {
+    font-size: 1.125rem;
+
+    /* Vertical Rythm */
+    > * {
+        margin-bottom: 2rem;
+    }
+
+    a {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+
+    /* Images */
+    img,
+    video {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto 2rem;
+        color: $gray;
+        font-style: italic;
+        text-align: center;
+    }
+
+    figure {
+        max-width: none;
+        margin: 2rem auto;
+        text-align: center;
+
+        img {
+            margin-bottom: 0;
+        }
+    }
+
+    figcaption {
+        padding-top: 0.75rem;
+        font-style: italic;
+        font-size: 1rem;
+    }
+
+    /* Video */
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Headings */
+    h2,
+    h3,
+    h4 {
+        position: relative;
+        margin-top: 1.5em;
+        margin-bottom: 0.75em;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    /* Lists */
+    ul,
+    ol {
+        list-style-position: inside;
+    }
+    ul {
+        list-style-type: disc;
+    }
+    ol {
+        list-style-type: decimal;
+    }
+
+    /* Code blocks */
+    pre[class*='language-'] {
+        display: block;
+        font-size: 1rem;
+    }
+
+    /* Inline code */
+    :not(pre) > code {
+        display: inline-block;
+        font-family: $font-family-monospace;
+        background-color: $gray-lighter;
+        border: 1px solid $gray-light;
+        border-radius: 3px;
+        padding: 2px 4px;
+        margin: 0 2px;
+        font-size: 75%;
+    }
+}
