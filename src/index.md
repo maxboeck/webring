@@ -6,11 +6,15 @@ layout: home
 
 ## How to join
 
-To add a new site to the webring, [open a pull request]({{ meta.repo }}/compare) and supply the following information:
+To add your site to the webring, [open a pull request]({{ meta.repo }}/compare) and supply the following information:
 
 * Name of your site
 * URL of your site
 * URL of your RSS feed (optional)
+
+Alternatively, you can use this form to sign up:
+
+{% include 'signupform.njk' %}
 
 The webring admins will then look at your site and determine if it will be included.
 
