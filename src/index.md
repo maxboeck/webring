@@ -18,6 +18,8 @@ The webring admins will then look at your site and handle your request.
 
 ## Add the badge
 
+Once you've joined the ring, copy this code snippet into your site:
+
 ```html 
 <webring-badge>
     <p>Member of the <a href="{{ meta.url }}">{{ meta.title }}</a> webring</p>
@@ -27,6 +29,8 @@ The webring admins will then look at your site and handle your request.
 </webring-badge>
 <script async src="{{ meta.url }}/embed.js" charset="utf-8"></script>
 ```
+
+It will render this badge that links to the other members:
 
 {% include 'snippet.njk' %}
 
