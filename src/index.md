@@ -4,7 +4,7 @@ layout: home
 
 ## What's this?
 
-A community of sites around a common topic, also known as a [webring](https://en.wikipedia.org/wiki/Webring). Kids in the 90s used to do it.
+A community of sites around a common topic, also known as a [webring](https://en.wikipedia.org/wiki/Webring). Each member includes a badge on their site that links to the previous and next sites in the ring. Kids in the 90s used to do it!
 
 ## How to join
 
@@ -14,9 +14,11 @@ If you don't have a Github account, you can also use this form to sign up:
 
 {% include 'signupform.njk' %}
 
-The webring admins will then look at your site and determine if it's a good fit.
+The webring admins will then look at your site and handle your request.
 
-## Add the Snippet
+## Add the badge
+
+If you want to make your own badge, use these three links to connect to the webring:
 
 ```html 
 <a href="{{ meta.url }}/prev">Previous</a>

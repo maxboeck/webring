@@ -8,17 +8,20 @@ h6 {
     line-height: 1.3;
 }
 
-h1 {
+h1,
+.h1 {
     font-size: 2rem;
     text-rendering: optimizeLegibility;
 }
 
-h2 {
+h2,
+.h2 {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-h3 {
+h3,
+.h3 {
     font-size: 1.25rem;
     font-weight: 700;
 }
