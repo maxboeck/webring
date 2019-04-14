@@ -23,6 +23,7 @@ class WebringBadge extends HTMLElement {
 
           :host {
             display: block;
+            width: 100%;
             font-family: sans-serif;
             font-size: 16px;
             text-align:left;
@@ -33,7 +34,6 @@ class WebringBadge extends HTMLElement {
             border-radius: 8px;
             box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
             max-width:480px;
-            margin:0 auto;
           }
 
           .webring-badge a {
@@ -47,7 +47,6 @@ class WebringBadge extends HTMLElement {
             flex-wrap:wrap;
             position:relative;
             padding: 1rem;
-            font-size:.875rem;
             border-bottom: 1px solid #DDD;
           }
 
@@ -135,7 +134,7 @@ class WebringBadge extends HTMLElement {
                 href="${this.url}/prev" 
                 class="webring-badge__link webring-badge__link--prev" 
                 aria-label="Go to previous site"
-              >⬅️ Previous</a>
+              >⬅️Previous</a>
               <a
                 href="${this.url}/random"
                 class="webring-badge__link webring-badge__link--random" 
