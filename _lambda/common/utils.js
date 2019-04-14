@@ -5,11 +5,8 @@ export const redirect = site => {
     console.log(statusMessage)
 
     return {
-        statusCode: 302,
-        headers: {
-            Location: site.url,
-            'Cache-Control': 'no-cache, no-store, must-revalidate'
-        },
+        statusCode: 303,
+        headers: { Location: site.url },
         body: statusMessage
     }
 }
