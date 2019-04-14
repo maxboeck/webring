@@ -1,6 +1,7 @@
 {
     "title": "An Example Webring",
     "description": "Lorem Ipsum dolor, this is a webring about community XY.",
+    "image": "logo.jpg",
     "url": "https://webrings.netlify.com",
     "repo": "https://github.com/maxboeck/webring",
     "admins": [
