@@ -5,7 +5,7 @@ Inspired by this post from [Charlie Owen](https://www.sonniesedge.net/posts/webr
 
 Uses [Eleventy](https://www.11ty.io) and [Netlify](https://www.netlify.com/) to build a central directory for member sites. People can link to `/prev`, `/random` and `/next` and be redirected to members of the ring.
 
-See the [Demo Site](https://webrings.netlify.com)
+See the [Demo Site](https://webringdemo.netlify.com)
 
 * Admins manage the ring on Github
 * Let people add their site through pull request or submit via Netlify Form
@@ -18,7 +18,7 @@ See the [Demo Site](https://webrings.netlify.com)
 1. Fork this repo
 2. Edit `src/data/meta.json` and fill in your community info
 3. Remove the demo members in `src/data/members.json`
-4. [Deploy your site to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/maxboeck/webring)
+4. Deploy your site to Netlify
 5. After you've set a domain, enter that in `meta.json` as well.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/maxboeck/webring)
