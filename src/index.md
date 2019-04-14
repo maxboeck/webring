@@ -4,11 +4,11 @@ layout: home
 
 ## What's this?
 
-A community of sites around a common topic, also known as a [webring](). Kids in the 90s used to do it.
+A community of sites around a common topic, also known as a [webring](https://en.wikipedia.org/wiki/Webring). Kids in the 90s used to do it.
 
 ## How to join
 
-To join the webring, [open a pull request]({{ meta.repo }}/compare) and supply the name and URL of your site. If you publish a RSS feed, you can provide that as well to add it to the central index.
+To join the webring, [open a pull request]({{ meta.repo }}/compare) and supply the name and URL of your site. If you publish a RSS feed, you can provide that as well.
 
 If you don't have a Github account, you can also use this form to sign up:
 

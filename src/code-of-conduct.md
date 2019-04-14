@@ -4,4 +4,6 @@ title: 'Code of Conduct'
 permalink: coc/index.html
 ---
 
-Lorem Ipsum dolor
+# Code of Conduct
+
+Rules for being in this webring. 
