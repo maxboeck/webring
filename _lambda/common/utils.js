@@ -34,9 +34,9 @@ export const getPrevious = url => {
 }
 
 export const getRandom = url => {
-    const randomIndex = Math.floor(Math.random() * members.length)
-    const sites = url
+    const selection = url
         ? members.filter(site => !url.includes(site.url))
         : members
-    return sites[randomIndex]
+    const randomIndex = Math.floor(Math.random() * selection.length)
+    return selection[randomIndex]
 }
