@@ -5,7 +5,7 @@ class WebringBanner extends HTMLElement {
     constructor() {
         super();
 
-        this.wrtitle = '{{ meta.title }}';
+        this.ringtitle = '{{ meta.title }}';
         this.url = '{{ meta.url }}';
         this.image = this.url + '/assets/images/{{ meta.image }}';
         this.membercount = {{ members | length}};
@@ -35,6 +35,7 @@ class WebringBanner extends HTMLElement {
   
           .webring-banner {
             background-color: #FFF;
+            border: 1px solid #DDD;
             border-radius: 8px;
             box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
             max-width:480px;
@@ -43,6 +44,12 @@ class WebringBanner extends HTMLElement {
           .webring-banner a {
             color: #7b16ff;
             text-decoration:none;
+          }
+
+          .webring-banner a:hover,
+          .webring-banner a:focus {
+            color: #6200e2;
+            text-decoration:underline;
           }
 
           .webring-banner__header {
@@ -134,7 +141,7 @@ class WebringBanner extends HTMLElement {
               <div class="webring-banner__description">
                 <span>This site is part of</span>
                 <h3 class="webring-banner__title">
-                  <a href="${this.url}">${this.wrtitle}</a>
+                  <a href="${this.url}">${this.ringtitle}</a>
                 </h3>
                 <span>A webring with ${this.membercount} Members</span>
               </div>
