@@ -28,5 +28,10 @@
         "title": "Jan Hrubý",
         "url": "https://www.mrozilla.cz/",
         "feed": null
+    },
+    {
+        "title": "Zach Leatherman",
+        "url": "https://www.zachleat.com/",
+        "feed": "https://www.zachleat.com/web/feed/"
     }
 ]
