@@ -7,7 +7,20 @@ module.exports = function(config) {
     config.addLayoutAlias('base', 'base.njk')
     config.addLayoutAlias('page', 'page.njk')
 
-    config.addPassthroughCopy('src/assets/images')
+    config.addFilter('mapNodes', function(nodes, radius, width, height) {
+        return nodes.map((node, index) => {
+            const angle = (index / (nodes.length / 2)) * Math.PI
+            const x = radius * Math.cos(angle) + width / 2
+            const y = radius * Math.sin(angle) + height / 2
+
+            return {
+                title: node.title,
+                url: node.url,
+                x,
+                y
+            }
+        })
+    })
 
     config.addTransform('htmlmin', function(content, outputPath) {
         if (outputPath.endsWith('.html')) {
@@ -19,6 +32,8 @@ module.exports = function(config) {
         }
         return content
     })
+
+    config.addPassthroughCopy('src/assets/images')
 
     return {
         dir: {

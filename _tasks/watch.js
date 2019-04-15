@@ -4,5 +4,4 @@ const gulp = require('gulp')
 */
 gulp.task('watch', function() {
     gulp.watch('src/assets/styles/**/*.scss', gulp.series('styles'))
-    gulp.watch('src/assets/scripts/**/*.js', gulp.series('scripts'))
 })

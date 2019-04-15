@@ -68,7 +68,9 @@
         text-decoration: none;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 640px) {
+        padding-top: 3rem;
+
         &__header {
             display: block;
             padding-top: 60px;
@@ -76,6 +78,9 @@
         &__image {
             position: absolute;
             top: -20px;
+        }
+        &__map {
+            display: none;
         }
     }
 }
