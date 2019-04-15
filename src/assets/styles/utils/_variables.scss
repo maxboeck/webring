@@ -4,16 +4,16 @@
 
 $gray-darkest: #121212;
 $gray-darker: #323232;
-$gray-dark: #4a4a4a;
-$gray: #a0a0a0;
-$gray-light: #c5c6c6;
-$gray-lighter: #e6e6e6;
-$gray-lightest: #f6f8fa;
+$gray-dark: #6f6f6e;
+$gray: #54698d;
+$gray-light: #a8b7c7;
+$gray-lighter: #c9d3e4;
+$gray-lightest: #f5f8fc;
 
 // Brand
 
 $brand-primary: #7b16ff;
-
+$brand-primary-dark: darken($brand-primary, 6%);
 // Body
 //
 // Settings for the `<body>` element.

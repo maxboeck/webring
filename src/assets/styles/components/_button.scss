@@ -22,6 +22,7 @@
     &:hover,
     &:focus {
         text-decoration: none;
+        background-color: $brand-primary-dark;
         color: #fff;
     }
 }
@@ -34,6 +35,7 @@
 
     &:hover,
     &:focus {
+        background-color: #111;
         text-decoration: none;
         color: #fff;
     }
