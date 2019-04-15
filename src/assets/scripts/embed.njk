@@ -17,8 +17,12 @@ class WebringBanner extends HTMLElement {
     getStyles() {
         return `
         <style>
-          :root * {
+          * {
             box-sizing: border-box;
+          }
+        
+          :root {
+            font-size: 100%;
           }
 
           :host {
@@ -52,7 +56,7 @@ class WebringBanner extends HTMLElement {
 
           .webring-banner__description {
             flex: 1 0 0%;
-            padding-right: 32px;
+            padding-right: 2rem;
           }
 
           .webring-banner__image {
@@ -72,14 +76,13 @@ class WebringBanner extends HTMLElement {
 
           .webring-banner__info {
             display:flex;
-            align-items:center;
             justify-content:center;
             border-radius:50%;
             border: 2px solid #DDD;
-            width:20px;
-            height:20px;
-            line-height: 20px;
-            font-size: 12px;
+            width:1.25rem;
+            height:1.25rem;
+            line-height: 1.25rem;
+            font-size: .75rem;
             text-align:center;
             color: #666;
             text-decoration:none;
@@ -113,6 +116,9 @@ class WebringBanner extends HTMLElement {
           @media (min-width:400px) {
             .webring-banner__link {
                 min-width:100px;
+            }
+            .webring-banner__info {
+                align-items:center;
             }
           }
         </style>
