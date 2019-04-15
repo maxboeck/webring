@@ -1,6 +1,7 @@
 <svg class="map" width="640" height="440">
     <circle cx="320" cy="220" r="170" class="map__circle"></circle>
-    <circle cx="320" cy="220" r="15" class="map__center" data-title="{{ meta.title }}"></circle>
+    <circle cx="320" cy="220" r="50" class="map__center"></circle>
+    <text x="320" y="225" text-anchor="middle" class="map__title">{{ meta.title }}</text>
     {% for node in members|mapNodes(170, 640, 440) %}
         <circle r="10" cx="{{ node.x }}" cy="{{ node.y }}" class="map__node"></circle>
         <text x="{{ node.x }}" y="{{ node.y - 15 }}" text-anchor="middle" class="map__tooltip">{{ node.title }}</text>

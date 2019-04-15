@@ -13,5 +13,20 @@
         "title": "Charlie Owen",
         "url": "https://www.sonniesedge.net/",
         "feed": null
+    },
+    {
+        "title": "Phil Hawksworth",
+        "url": "http://hawksworx.com/",
+        "feed": "https://www.hawksworx.com/feed.xml"
+    },
+    {
+        "title": "Björn Ganslandt",
+        "url": "https://ganslandt.xyz/",
+        "feed": null
+    },
+    {
+        "title": "Jan Hrubý",
+        "url": "https://www.mrozilla.cz/",
+        "feed": null
     }
 ]
