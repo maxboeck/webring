@@ -1,0 +1,13 @@
+.map {
+    &__circle {
+        fill: transparent;
+        stroke: $gray-light;
+        stroke-width: 3;
+    }
+    &__center {
+        fill: $brand-primary;
+    }
+    &__node {
+        fill: steelblue;
+    }
+}
