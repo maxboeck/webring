@@ -8,6 +8,7 @@ Uses [Eleventy](https://www.11ty.io) and [Netlify](https://www.netlify.com/) to 
 See the [Demo Site](https://webringdemo.netlify.com)
 
 * Admins manage the ring on Github
+* Members are defined in `src/data/members.json`
 * Let people add their site through pull request or submit via Netlify Form
 * Publish a Code of Conduct
 * Provide an embed code that renders a badge (as a web component)
@@ -23,3 +24,22 @@ See the [Demo Site](https://webringdemo.netlify.com)
 6. After you've set a domain, enter that in `meta.json` as well.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/maxboeck/webring)
+
+
+## Local Development
+
+To build the site locally, run these commands:
+
+```shell
+# clone this repository
+git clone git@github.com:maxboeck/webring.git
+
+# go to the working directory
+cd webring
+
+# install dependencies
+yarn
+
+# start a local build server and the gulp pipeline
+yarn start
+```
