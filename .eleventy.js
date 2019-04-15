@@ -9,7 +9,6 @@ module.exports = function(config) {
     config.addLayoutAlias('page', 'page.njk')
 
     config.addPassthroughCopy('src/assets/images')
-    config.addPassthroughCopy('src/assets/styles/main.css')
 
     config.addTransform('htmlmin', function(content, outputPath) {
         if (outputPath.endsWith('.html')) {
@@ -30,7 +29,7 @@ module.exports = function(config) {
             layouts: 'layouts',
             data: 'data'
         },
-        templateFormats: ['njk', 'md'],
+        templateFormats: ['njk', 'md', 'css'],
         htmlTemplateEngine: 'njk',
         markdownTemplateEngine: 'njk',
         passthroughFileCopy: true
