@@ -8,6 +8,20 @@
         fill: $brand-primary;
     }
     &__node {
-        fill: steelblue;
+        fill: $gray-dark;
+        stroke-width: 5;
+        stroke-opacity: 0;
+        stroke: $gray-dark;
+
+        &:hover {
+            stroke-opacity: 1;
+        }
+    }
+    &__tooltip {
+        opacity: 0;
+        font-weight: bold;
+    }
+    &__node:hover + &__tooltip {
+        opacity: 1;
     }
 }
