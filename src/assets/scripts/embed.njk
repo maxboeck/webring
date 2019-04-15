@@ -1,7 +1,7 @@
 ---
 permalink: 'embed.js'
 ---
-class WebringBadge extends HTMLElement {
+class WebringBanner extends HTMLElement {
     constructor() {
         super();
 
@@ -29,19 +29,19 @@ class WebringBadge extends HTMLElement {
             text-align:left;
           }
   
-          .webring-badge {
+          .webring-banner {
             background-color: #FFF;
             border-radius: 8px;
             box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
             max-width:480px;
           }
 
-          .webring-badge a {
-            color: #00ad9f;
+          .webring-banner a {
+            color: #7b16ff;
             text-decoration:none;
           }
 
-          .webring-badge__header {
+          .webring-banner__header {
             display:flex;
             align-items: center;
             flex-wrap:wrap;
@@ -50,12 +50,12 @@ class WebringBadge extends HTMLElement {
             border-bottom: 1px solid #DDD;
           }
 
-          .webring-badge__description {
+          .webring-banner__description {
             flex: 1 0 0%;
             padding-right: 32px;
           }
 
-          .webring-badge__image {
+          .webring-banner__image {
             display:block;
             width:70px;
             height:70px;
@@ -63,14 +63,14 @@ class WebringBadge extends HTMLElement {
             border-radius:50%;
           }
 
-          .webring-badge__title {
+          .webring-banner__title {
             margin:0;
             font-size:1.25rem;
             font-weight: bold;
             line-height:1.2;
           }
 
-          .webring-badge__info {
+          .webring-banner__info {
             display:flex;
             align-items:center;
             justify-content:center;
@@ -88,7 +88,7 @@ class WebringBadge extends HTMLElement {
             right:1rem;
           }
 
-          .webring-badge__links {
+          .webring-banner__links {
             display:flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -96,22 +96,22 @@ class WebringBadge extends HTMLElement {
             margin:0;
           }
 
-          .webring-badge__link {
+          .webring-banner__link {
             display:block;
             text-decoration:none;
             color: #00ad9f;
           }
 
-          .webring-badge__link--random {
+          .webring-banner__link--random {
             text-align:center;
           }
 
-          .webring-badge__link--next {
+          .webring-banner__link--next {
             text-align:right;
           }
 
           @media (min-width:400px) {
-            .webring-badge__link {
+            .webring-banner__link {
                 min-width:100px;
             }
           }
@@ -122,32 +122,32 @@ class WebringBadge extends HTMLElement {
     getTemplate() {
         return `
           ${this.getStyles()}
-          <div class="webring-badge">
-            <div class="webring-badge__header">
-              <img class="webring-badge__image" src="${this.image}" alt="" />
-              <div class="webring-badge__description">
+          <div class="webring-banner">
+            <div class="webring-banner__header">
+              <img class="webring-banner__image" src="${this.image}" alt="" />
+              <div class="webring-banner__description">
                 <span>This site is part of</span>
-                <h3 class="webring-badge__title">
+                <h3 class="webring-banner__title">
                   <a href="${this.url}">${this.wrtitle}</a>
                 </h3>
                 <span>A webring with ${this.membercount} Members</span>
               </div>
-              <a class="webring-badge__info" href="https://en.wikipedia.org/wiki/Webring" title="What's this?">?</a>
+              <a class="webring-banner__info" href="https://en.wikipedia.org/wiki/Webring" title="What's this?">?</a>
             </div>
-            <p class="webring-badge__links">
+            <p class="webring-banner__links">
               <a 
                 href="${this.url}/prev" 
-                class="webring-badge__link webring-badge__link--prev" 
+                class="webring-banner__link webring-banner__link--prev" 
                 aria-label="Go to previous site"
               >⬅️Previous</a>
               <a
                 href="${this.url}/random"
-                class="webring-badge__link webring-badge__link--random" 
+                class="webring-banner__link webring-banner__link--random" 
                 aria-label="Go to a random site"
               >😎Random</a>
               <a
                 href="${this.url}/next"
-                class="webring-badge__link webring-badge__link--next"
+                class="webring-banner__link webring-banner__link--next"
                 aria-label="Go to next site"
               >Next ➡️</a>
             </p>
@@ -160,4 +160,4 @@ class WebringBadge extends HTMLElement {
     }
 }
 
-customElements.define('webring-badge', WebringBadge);
+customElements.define('webring-banner', WebringBanner);

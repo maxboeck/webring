@@ -16,21 +16,21 @@ If you don't have a Github account, you can also use this form to sign up:
 
 The webring admins will then look at your site and handle your request.
 
-## Add the badge
+## Add the banner
 
 Once you've joined the ring, copy this code snippet into your site:
 
 ```html 
-<webring-badge>
+<webring-banner>
     <p>Member of the <a href="{{ meta.url }}">{{ meta.title }}</a> webring</p>
     <a href="{{ meta.url }}/prev">Previous</a>
     <a href="{{ meta.url }}/random">Random</a>
     <a href="{{ meta.url }}/next">Next</a>
-</webring-badge>
+</webring-banner>
 <script async src="{{ meta.url }}/embed.js" charset="utf-8"></script>
 ```
 
-It will render this badge that links to the other members:
+It will render this banner that links to the other members:
 
 {% include 'snippet.njk' %}
 
