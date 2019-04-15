@@ -98,7 +98,6 @@ class WebringBadge extends HTMLElement {
 
           .webring-badge__link {
             display:block;
-            min-width: 100px;
             text-decoration:none;
             color: #00ad9f;
           }
@@ -109,6 +108,12 @@ class WebringBadge extends HTMLElement {
 
           .webring-badge__link--next {
             text-align:right;
+          }
+
+          @media (min-width:400px) {
+            .webring-badge__link {
+                min-width:100px;
+            }
           }
         </style>
       `;
