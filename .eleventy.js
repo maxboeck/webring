@@ -5,7 +5,6 @@ module.exports = function(config) {
     config.addPlugin(syntaxHighlight)
 
     config.addLayoutAlias('base', 'base.njk')
-    config.addLayoutAlias('home', 'home.njk')
     config.addLayoutAlias('page', 'page.njk')
 
     config.addPassthroughCopy('src/assets/images')
