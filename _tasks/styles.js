@@ -9,5 +9,5 @@ gulp.task('styles', function() {
                 outputStyle: 'compressed'
             }).on('error', sass.logError)
         )
-        .pipe(gulp.dest('./src/assets/styles'))
+        .pipe(gulp.dest('./dist/assets/styles'))
 })

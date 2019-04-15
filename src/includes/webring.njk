@@ -1,28 +1,33 @@
 <article class="webring">
-    <header class="webring__header">
-        {% if meta.image %}
-        <img class="webring__image" src="/assets/images/{{ meta.image }}" width="70" height="70" alt="">
-        {% endif %}
+    <div class="webring__map" hidden>
+        <canvas id="map-canvas"></canvas>
+    </div>
+    <div class="webring__card">
+        <header class="webring__header">
+            {% if meta.image %}
+            <img class="webring__image" src="/assets/images/{{ meta.image }}" width="70" height="70" alt="">
+            {% endif %}
 
-        <div class="webring__description">
-            <h1 class="webring__title">{{ meta.title }}</h1>
-            <p>{{ meta.description }}</p>
-            <a href="/code-of-conduct">Code of Conduct</a>
-        </div>
-    </header>
-        
-    <div class="webring__body">
-        <div class="webring__subtitle">
-            <h2 class="h3">Members ({{ members | length }})</h2>
-            <a href="/feeds.xml">RSS Feeds</a>
-        </div>
+            <div class="webring__description">
+                <h1 class="webring__title">{{ meta.title }}</h1>
+                <p>{{ meta.description }}</p>
+                <a href="/code-of-conduct">Code of Conduct</a>
+            </div>
+        </header>
+            
+        <div class="webring__body">
+            <div class="webring__subtitle">
+                <h2 class="h3">Members ({{ members | length }})</h2>
+                <a href="/feeds.xml">RSS Feeds</a>
+            </div>
 
-        <ol class="webring__memberlist">
-            {% for member in members %}
-            <li class="webring__member">
-                <a href="{{ member.url }}" class="webring__link">{{ member.title }}</a>
-            </li>
-            {% endfor %}
-        </ol>
+            <ol class="webring__memberlist">
+                {% for member in members %}
+                <li class="webring__member">
+                    <a href="{{ member.url }}" class="webring__link">{{ member.title }}</a>
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
     </div>
 </article>

@@ -1,9 +1,11 @@
 .webring {
-    position: relative;
-    margin-bottom: 3rem;
-    background-color: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
+    &__card {
+        position: relative;
+        margin-bottom: 2rem;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
+    }
 
     &__header,
     &__body {

@@ -14,6 +14,10 @@
     <div class="container">
         {{ content | safe }}
     </div>
+
+    {% if is_front %}
+    <script src="/assets/scripts/map.js"></script>
+    {% endif %}
 </body>
 </html>
 
