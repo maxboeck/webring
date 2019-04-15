@@ -1,7 +1,7 @@
 import members from '../../src/data/members'
 
 export const redirect = site => {
-    const statusMessage = `redirecting to: ${site.title}`
+    const statusMessage = `redirecting to: ${site.url}`
     console.log(statusMessage)
 
     return {
@@ -11,7 +11,8 @@ export const redirect = site => {
     }
 }
 
-export const getIndex = url => members.findIndex(site => url.includes(site.url))
+export const getIndex = url =>
+    url ? members.findIndex(site => url.includes(site.url)) : -1
 
 export const getNext = url => {
     const index = getIndex(url)
