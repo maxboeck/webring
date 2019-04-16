@@ -33,5 +33,10 @@
         "title": "Zach Leatherman",
         "url": "https://www.zachleat.com/",
         "feed": "https://www.zachleat.com/web/feed/"
+    },
+    {
+        "title": "Steve Gardner",
+        "url": "https://ste.vg",
+        "feed": null
     }
 ]
