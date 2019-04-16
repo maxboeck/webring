@@ -40,7 +40,7 @@ The index site will produce an embed code with your ring URL and title:
     <a href="{{ your-url }}/random">Random</a>
     <a href="{{ your-url }}/next">Next</a>
 </webring-banner>
-<script async src="{{ meta.url }}/embed.js" charset="utf-8"></script>
+<script async src="{{ your-url }}/embed.js" charset="utf-8"></script>
 ```
 
 The design is up to the ring admins. It could look something like this:
