@@ -1,7 +1,7 @@
 # Webring Starter Kit
 
 A boilerplate to host your own community of sites, also known as a [webring](https://en.wikipedia.org/wiki/Webring).  
-Inspired by [this post](https://www.sonniesedge.net/posts/webrings) from Charlie Owen.
+Inspired by posts from [Tatiana Mac](https://twitter.com/TatianaTMac/status/1114388079630929926) and [Charlie Owen](https://www.sonniesedge.net/posts/webrings).
 
 Uses [Eleventy](https://www.11ty.io) and [Netlify](https://www.netlify.com/) to build a central directory for member sites. People can link to `/prev`, `/random` and `/next` and be redirected to members of the ring.
 
@@ -9,10 +9,11 @@ See the [Demo Site](https://webringdemo.netlify.com)
 
 * Admins manage the ring on Github
 * Members are defined in `src/data/members.json`
-* Let people add their site through pull request or submit via Netlify Form
-* Publish a Code of Conduct
-* Provide an embed code that renders a badge (as a web component)
+* Let people add their site through pull request or submit via email form
+* Publish a code of conduct
+* Provide an embed code that renders a banner (as a web component)
 * Publish an index of all member RSS feeds
+* show a SVG map of the ring and its members
 
 ## How to host a ring
 
@@ -25,6 +26,26 @@ See the [Demo Site](https://webringdemo.netlify.com)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/maxboeck/webring)
 
+## Banner Embed
+
+Members can copy a code snippet and embed it into their sites.
+It renders a web component (with the bare links as a fallback).
+
+The index site will produce an embed code with your ring URL and title:
+
+```html
+<webring-banner>
+    <p>Member of <a href="{{ your-url }}">{{ your-title }}</a></p>
+    <a href="{{ your-url }}/prev">Previous</a>
+    <a href="{{ your-url }}/random">Random</a>
+    <a href="{{ your-url }}/next">Next</a>
+</webring-banner>
+<script async src="{{ meta.url }}/embed.js" charset="utf-8"></script>
+```
+
+The design is up to the ring admins. It could look something like this:
+
+![the banner widget](https://mxb.dev/assets/media/webrings/banner.png)
 
 ## Local Development
 
