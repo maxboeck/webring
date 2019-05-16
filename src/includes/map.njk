@@ -15,7 +15,7 @@
         <circle cx="{{ w/2 }}" cy="{{ h/2 }}" r="{{ ri }}" class="map__center"></circle>
     {% endif %}
     {% for node in nodes %}
-        <circle r="10" cx="{{ node.x }}" cy="{{ node.y }}" class="map__node"></circle>
+        <a href="{{ node.url }}"><circle r="10" cx="{{ node.x }}" cy="{{ node.y }}" class="map__node"></circle></a>
         <text x="{{ node.x }}" y="{{ node.y - 15 }}" text-anchor="middle" class="map__tooltip">{{ node.title }}</text>
     {% endfor %}
 </svg>
