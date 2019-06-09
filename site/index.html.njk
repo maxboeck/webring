@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>{{ meta.title }}</title>
+
+  <link rel="stylesheet" href="main.css">
+  <link type="application/atom+xml" rel="alternate" href="feeds.xml" title="{{ meta.title }}">
+</head>
+
+<body class="site">
+<div class="container">
+
+{# This sorta complicated header structure is to have the colon be the same
+color as the subtitle but still wrap with the header and not get separated. #}
+<header class="section-head">
+  <div class="title-item"><h1>Cyberqueer Webring</h1><span class="header-colon">:</span></div>
+  <div class="title-item">Not queer as in gay but queer as in punk.</div>
+</header>
+
+<section>
+  <blockquote class="center-block">
+    <p>
+      [cyberqueer] is the recognition that social liberty is inherently bound up
+      with material liberty, and that freedom is ultimately a matter of
+      expanding our capacity and opportunities to engage with the world around
+      us. it is the realization that our resistance against those social forces
+      that would subjugate and limit us is but part of a spectrum of efforts to
+      expand human agency-to facilitate our inquiry and creativity
+      <span class="quote-attribution">
+        --<a href="http://humaniterations.net/2012/01/06/what-is-anarcho-transhumanism/">rechelon</a>
+      </span>
+    </p>
+  </blockquote>
+</section>
+
+<section>
+  <header class="members-title section-head">
+    <h2>Members ({{ members | length }})</h2>
+    <a href="feeds.xml">RSS Feeds</a>
+  </header>
+  <ul class="members-list">
+    {%- for member in members -%}
+    <li>
+      <a href="{{ member.url }}">{{ member.title }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+<section>
+  <h2 class="section-head">What's this?</h2>
+  <p>
+    <a href="https://en.wikipedia.org/wiki/Webring">webring</a>, n. ancient technology from the 1990s used to navigate the internet
+  </p>
+  <p>
+    If you are a:
+  </p>
+  <ul>
+    <li>transhumanist tranny</li>
+    <li>agender AI</li>
+    <li>part-time Lain aficionado / full-time faggot</li>
+    <li>lame queerdo that thinks webrings are neat</li>
+  </ul>
+  <p>
+    then you might want to join.
+  </p>
+</section>
+
+<section>
+  <h2 class="section-head">Code of conduct</h2>
+  <p>
+    Don't be a piece of shit.
+  </p>
+</section>
+
+<section>
+  <h2 class="section-head">How to join</h2>
+  <p>
+    To join the webring, pull request
+    <a href="https://github.com/LynnKirby/cyberqueer">LynnKirby/cyberqueer</a>
+    with an updated "data/members.json". If you don't have a GitHub account, you
+    can also use this form to sign up. The webring admin will look at your site
+    and handle your request.
+  </p>
+  <div class="form-wrap">
+    <form name="signup" method="POST" data-netlify="true" netlify-honeypot="bot">
+      <label>
+        Site Name:
+        <input type="text" name="name" required />
+      </label>
+
+      <label>
+        Site URL:
+        <input type="url" name="url" required />
+      </label>
+
+      <label>
+        RSS Feed URL (optional):
+        <input type="url" name="feed" />
+      </label>
+
+      <div style="visibility:hidden;display:none" aria-hidden="true">
+        <label>
+          Don’t fill this out if you're human:
+          <input type="text" name="bot" />
+        </label>
+      </div>
+
+      <button type="submit">Give Me Validation</button>
+    </form>
+  </div>
+  <p>
+    Once you've joined the ring, copy this code snippet into your site:
+  </p>
+  <pre class="center-block">{% filter escape %}<iframe src="{{ meta.url }}/embed"></iframe>{% endfilter %}</pre>
+  <p>
+    It will render this banner that links to the other members:
+  </p>
+  <iframe src="{{ meta.url }}/embed"></iframe>
+</section>
+
+<footer>
+  <div>
+    Anticopyright 2019
+  </div>
+  <div>
+    <a href="https://github.com/LynnKirby/cyberqueer">Edit me on GitHub</a>
+  </div>
+</footer>
+
+</div>
+</body>
+
+</html>

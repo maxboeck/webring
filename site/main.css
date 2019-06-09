@@ -1,0 +1,379 @@
+/*
+ * SPDX-License-Identifier: 0BSD
+ * Written 2019 Lynn Kirby
+ *
+ * Notes:
+ *
+ * - The "!" comment below imports is put there so attribution is in the right
+ *   order when this file is inlined and minified.
+ *
+ * - ch = width of "0" character (i.e. width of all characters in monospace)
+ *   em = font size (i.e. height of all characters in monospace)
+ *   Therefore we use ch for horizontal measures and em for vertical ones.
+ */
+
+@import "minireset.css";
+
+/*! cyberqueer.netlify.com/main.css | 0BSD | github.com/LynnKirby/cyberqueer */
+
+/*
+ * Fancy VGA colors!
+ */
+
+:root {
+  --black: rgb(0, 0, 0);
+  --red: rgb(170, 0, 0);
+  --green: rgb(0, 170, 0);
+  --yellow: rgb(170, 85, 0);
+  --blue: rgb(0, 0, 170);
+  --magenta: rgb(170, 0, 170);
+  --cyan: rgb(0, 170, 170);
+  --white: rgb(170, 170, 170);
+
+  --bright-black: rgb(85,85,85);
+  --bright-red: rgb(255,85,85);
+  --bright-green: rgb(85,255,85);
+  --bright-yellow: rgb(	255,255,85);
+  --bright-blue: rgb(85,85,255);
+  --bright-magenta: rgb(255,85,255);
+  --bright-cyan: rgb(85,255,255);
+  --bright-white: rgb(255, 255, 255);
+}
+
+/*
+ * Various variables
+ */
+
+ @custom-media --small-viewport (max-width: 72ch);
+
+:root {
+  --text-color: var(--white);
+  --text-color-strong: var(--bright-white);
+  --background-color: var(--black);
+
+  --link-color: var(--magenta);
+  --link-color-hover: var(--bright-magenta);
+
+  --header-color: var(--bright-cyan);
+
+  --snippet-color: var(--yellow);
+
+  --input-color: var(--black);
+  --input-background-color: var(--bright-white);
+  --input-color-active: var(--black);
+  --input-border-color-active: var(--link-color-hover);
+
+  --page-width: 84ch;
+}
+
+/*
+ * Text: monospace all the things!
+ */
+
+@font-face {
+  font-family: "IBM VGA8";
+  src: url("/Px437_IBM_VGA8.ttf");
+}
+
+* {
+  font-family:
+    "IBM VGA8",
+    "Menlo",
+    "Consolas",
+    "Roboto Mono",
+    "Ubuntu Monospace",
+    "Noto Mono",
+    "Oxygen Mono",
+    "Liberation Mono",
+    monospace;
+}
+
+:root {
+  font-size: 16px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+ * Embed styles
+ */
+
+.embed {
+  border: 4px double white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.embed .container {
+  padding: 1em 2ch;
+}
+
+.ring-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*
+ * Layout: site has a relatively simple structure, a sequence of <section> with
+ * a header then section contents.
+ */
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  color: var(--text-color);
+  background: var(--background-color);
+}
+
+.site {
+  padding: 1em 1ch;
+}
+
+.site .container {
+  max-width: var(--page-width);
+  margin: 0 auto;
+}
+
+.center-block {
+  padding-left: 2ch;
+  padding-right: 2ch;
+  max-width: calc(var(--page-width) - 12ch);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+ * Block elements: 1-2 lines between. Removed for last sub-elements so we
+ * don't get doubled up lines when parent and child have margins.
+ */
+
+header,
+footer,
+pre,
+p,
+ul,
+pre,
+.section-head,
+label,
+form,
+blockquote {
+  display: block;
+  margin-bottom: 1em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+* > :last-child {
+  margin-bottom: 0;
+}
+
+/*
+ * General lists
+ */
+
+ul {
+  list-style-type: none;
+  margin-left: 2ch;
+}
+
+ul li::before {
+  content: "♦ ";
+}
+
+/*
+ * Headers: bright color and underlines for h1, h2. Note we only use two levels
+ * of header. Really just the page title and section names. Also display main
+ * title and subtitle on one line.
+ */
+
+h1, h2 {
+  color: var(--header-color);
+}
+
+h1 {
+  white-space: nowrap;
+}
+
+h1, .title-item {
+  display: inline-block;
+}
+
+.header-colon {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.section-head {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid var(--header-color);
+  padding-bottom: 0.5em;
+}
+
+/*
+ * Footer
+ */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--header-color);
+  padding-top: 0.5em;
+}
+
+/*
+ * Member list
+ */
+
+.members-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.members-list {
+  list-style: none;
+  /* Override regular list style indent */
+  margin-left: 0;
+}
+
+.members-list li {
+  color: var(--link-color);
+}
+
+.members-list li::before {
+  content: "» ";
+}
+
+/*
+ * Links
+ */
+
+a[href] {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a[href]:hover,
+a[href]:focus {
+  color: var(--link-color-hover);
+  text-decoration: underline;
+}
+
+/*
+ * Code block: add some padding and ensure overflow gets scrollbar-ed.
+ */
+
+pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  color: var(--snippet-color);
+  text-align: center;
+}
+
+/*
+ * Form
+ */
+
+.form-wrap {
+  display: flex;
+  margin: 2em auto;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+@media (--small-viewport) {
+  .form-wrap {
+
+  }
+
+  label {
+    flex-direction: column;
+  }
+}
+
+label {
+  color: var(--text-color-strong);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="url"],
+button {
+  font-size: 1rem;
+  border: none;
+  color: var(--input-color);
+  background: var(--input-background-color);
+  border: 1px solid var(--background-color);
+
+  /* Disable default styles */
+  outline: none;
+  box-shadow: none;
+}
+
+
+input[type="text"],
+input[type="url"] {
+  width: 30ch;
+  margin-left: 1ch;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="url"]:hover,
+input[type="url"]:focus {
+  color: var(--input-color-active);
+  border: 1px solid var(--input-border-color-active);
+}
+
+button {
+  align-self: center;
+}
+
+/*
+ * The embedded iframe
+ */
+
+iframe {
+  display: block;
+  margin: auto;
+}
+
+blockquote {
+
+  color: var(--green);
+}
+
+.quote-attribution {
+  color: var(--text-color);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.quote-attribution a {
+  color: var(--text-color);
+}
+
+.quote-attribution a:hover,
+.quote-attribution a:active {
+  color: var(--text-color-strong);
+}

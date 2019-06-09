@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <base target="_parent">
+</head>
+
+<body class="embed">
+<div class="container">
+  <p>
+    This site is part of <a href="{{ meta.url }}">Cyberqueer</a>, a webring with
+    {{ members | length }} members.
+  </p>
+  <p class="ring-nav">
+    <a href="{{ meta.url }}/prev" aria-label="Go to previous site">◄ Previous</a>
+    <a href="{{ meta.url }}/random" aria-label="Go to a random site">Random</a>
+    <a href="{{ meta.url }}/next" aria-label="Go to next site">Next ►</a>
+  </p>
+</div>
+</body>
+
+</html>
