@@ -2,7 +2,7 @@
   {
     "title": "Lynn Kirby | arrak.is",
     "url": "https://arrak.is/",
-    "frameAncestor": "*.arrak.is",
+    "frameAncestor": ["arrak.is", "*.arrak.is"],
     "feed": null
   },
   {

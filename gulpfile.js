@@ -47,7 +47,12 @@ const nunjucks = require("gulp-nunjucks");
 gulp.task("template", () => {
   const data = {
     meta: fs.readJSONSync("data/meta.json"),
-    members: fs.readJSONSync("data/members.json"),
+    members: fs.readJSONSync("data/members.json").map(member => {
+      if (member.frameAncestor && !Array.isArray(member.frameAncestor)) {
+        member.frameAncestor = [member.frameAncestor];
+      }
+      return member;
+    }),
   };
 
   if (serve) {

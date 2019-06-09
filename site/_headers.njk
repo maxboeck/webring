@@ -11,10 +11,14 @@
 {#- CSP directives allowing the embed frame to be loaded by known sources. -#}
 {#- The space in the 'if' block is needed. -#}
 {%- for member in members -%}
-{%- if member.frameAncestor %} {{ member.frameAncestor }}{%- endif -%}
+{%- if member.frameAncestor %}
+{%- for fr in member.frameAncestor %} {{ fr }}{%- endfor -%}
+{%- endif -%}
 {%- endfor %}
 /embed.html
   Content-Security-Policy: frame-ancestors 'self'
 {%- for member in members -%}
-{%- if member.frameAncestor %} {{ member.frameAncestor }}{%- endif -%}
-{%- endfor -%}
+{%- if member.frameAncestor %}
+{%- for fr in member.frameAncestor %} {{ fr }}{%- endfor -%}
+{%- endif -%}
+{%- endfor %}

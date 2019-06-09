@@ -4,7 +4,7 @@ To add a new site to the webring, please supply the following information:
 
 * Name of your site.
 * URL of your site.
-* Host for [`frame-ancestors` HTTP security directive](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors).
+* Host(s) for [`frame-ancestors` HTTP security directive](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors).
   Without this, browsers will block the banner `<iframe>` on your site.
 * URL of your RSS feed (optional).
 
