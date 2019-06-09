@@ -51,10 +51,10 @@ gulp.task("template", () => {
   };
 
   if (serve) {
-    // Use localhost when developing.
+    // Use localhost when serving locally.
     data.meta.url = "http://localhost:3000";
-  } else if (process.env.DEPLOY_URL) {
-    // Use the Netlify deploy URL when doing a CI build.
+  } else if (process.env.BRANCH !== "master" && process.env.DEPLOY_URL) {
+    // Use the unique deploy URL when doing a development CI build.
     data.meta.url = process.env.DEPLOY_URL;
   }
 
