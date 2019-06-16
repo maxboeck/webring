@@ -13,8 +13,11 @@ export const redirect = site => {
   };
 };
 
-export const getIndex = url =>
-  url ? members.findIndex(site => url.includes(site.url)) : -1;
+export const getIndex = url => {
+  console.log(`referer: ${url}`);
+  console.log(`members:`, members);
+  return url ? members.findIndex(site => url.includes(site.url)) : -1;
+};
 
 export const getNext = url => {
   const index = getIndex(url);

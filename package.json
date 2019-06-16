@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "gulp watch",
+    "start": "gulp serve",
     "build": "gulp && npm run build:lambda",
     "serve:lambda": "netlify-lambda serve lambda",
     "build:lambda": "netlify-lambda build lambda",
