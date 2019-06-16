@@ -13,11 +13,8 @@ export const redirect = site => {
   };
 };
 
-export const getIndex = url => {
-  console.log(`referer: ${url}`);
-  console.log(`members:`, members);
-  return url ? members.findIndex(site => url.includes(site.url)) : -1;
-};
+export const getIndex = url =>
+  url ? members.findIndex(site => url.includes(site.url)) : -1;
 
 export const getNext = url => {
   const index = getIndex(url);
@@ -25,7 +22,7 @@ export const getNext = url => {
     const nextIndex = index < members.length - 1 ? index + 1 : 0;
     return members[nextIndex];
   }
-  console.log("referrer position not found.");
+  console.log(`referrer position not found: ${url}`);
   return null;
 };
 
@@ -35,7 +32,7 @@ export const getPrevious = url => {
     const prevIndex = index > 0 ? index - 1 : members.length - 1;
     return members[prevIndex];
   }
-  console.log("referrer position not found.");
+  console.log(`referrer position not found: ${url}`);
   return null;
 };
 
