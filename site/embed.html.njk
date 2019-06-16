@@ -16,11 +16,24 @@
     {{ members | length }} members.
   </p>
   <p class="ring-nav">
-    <a href="{{ meta.url }}/prev" aria-label="Go to previous site">◄ Previous</a>
-    <a href="{{ meta.url }}/random" aria-label="Go to a random site">Random</a>
-    <a href="{{ meta.url }}/next" aria-label="Go to next site">Next ►</a>
+    <a href="{{ meta.url }}/prev" aria-label="Go to previous site" id="prev">◄ Previous</a>
+    <a href="{{ meta.url }}/random" aria-label="Go to a random site" id="random">Random</a>
+    <a href="{{ meta.url }}/next" aria-label="Go to next site" id="next">Next ►</a>
   </p>
 </div>
+<script>
+  if (parent !== window) {
+    const referer = encodeURIComponent(new URL(document.referrer).origin);
+
+    function fixup(elem) {
+      elem.href = elem.href + "?referer=" + referer;
+    }
+
+    fixup(document.getElementById("prev"));
+    fixup(document.getElementById("random"));
+    fixup(document.getElementById("next"));
+  }
+</script>
 </body>
 
 </html>
