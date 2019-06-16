@@ -8,19 +8,19 @@
   to = "/embed"
 
 [[redirects]]
-  from = "/next"
-  to = "/.netlify/functions/next"
-  status = 301
+  from = "/next/*"
+  to = "/.netlify/functions/next/:splat"
+  status = 200
   force = true
 
 [[redirects]]
-  from = "/prev"
-  to = "/.netlify/functions/prev"
-  status = 301
+  from = "/prev/*"
+  to = "/.netlify/functions/prev/:splat"
+  status = 200
   force = true
 
 [[redirects]]
-  from = "/random"
-  to = "/.netlify/functions/random"
-  status = 301
+  from = "/random/*"
+  to = "/.netlify/functions/random/:splat"
+  status = 200
   force = true
