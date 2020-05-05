@@ -1,30 +1,26 @@
 [build]
-  command = "yarn run build"
-  publish = "dist"
-  Functions = "functions"
-
-[[headers]]
-    for = "/*"
-    [headers.values]
-        X-Frame-Options = "DENY"
-        X-XSS-Protection = "1; mode=block"
-        X-Content-Type-Options = "nosniff"
-        Referrer-Policy= "no-referrer-when-downgrade"
+  command = "npm run build"
+  publish = "dist/site"
+  functions = "dist/functions"
 
 [[redirects]]
-    from = "/next"
-    to = "/.netlify/functions/next"
-    status = 301
-    force = true
+  from = "/embed.html"
+  to = "/embed"
 
 [[redirects]]
-    from = "/prev"
-    to = "/.netlify/functions/prev"
-    status = 301
-    force = true
+  from = "/next/*"
+  to = "/.netlify/functions/next/:splat"
+  status = 200
+  force = true
 
 [[redirects]]
-    from = "/random"
-    to = "/.netlify/functions/random"
-    status = 301
-    force = true
+  from = "/prev/*"
+  to = "/.netlify/functions/prev/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/random/*"
+  to = "/.netlify/functions/random/:splat"
+  status = 200
+  force = true

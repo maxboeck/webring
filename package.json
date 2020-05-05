@@ -1,27 +1,38 @@
 {
-  "name": "webring",
-  "version": "0.1.0",
-  "description": "A boilerplate for hosting a webring community",
-  "author": "Max Böck",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/maxboeck/webring"
-  },
+  "private": true,
   "scripts": {
-    "start": "gulp build:dev & eleventy --serve",
-    "build": "gulp build && eleventy && yarn run build:lambda",
-    "serve:lambda": "netlify-lambda serve _lambda",
-    "build:lambda": "netlify-lambda build _lambda"
+    "start": "gulp serve",
+    "build": "gulp && npm run build:lambda",
+    "serve:lambda": "netlify-lambda serve lambda",
+    "build:lambda": "netlify-lambda build lambda",
+    "format": "prettier --write \"*.js\" \"lambda/**/*.js\""
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.8.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
-    "del": "^3.0.0",
+    "acorn": "^6.1.1",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "fs-extra": "^8.0.1",
     "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.1",
-    "html-minifier": "^3.5.20",
+    "gulp-nunjucks": "^5.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "minireset.css": "0.0.5",
     "netlify-lambda": "^1.1.1",
-    "require-dir": "^1.2.0"
+    "postcss": "^7.0.17",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.6.0",
+    "postcss-use": "^3.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "prettier": {
+    "semi": true,
+    "useTabs": false,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "singleQuote": false,
+    "bracketSpacing": true
   }
 }
