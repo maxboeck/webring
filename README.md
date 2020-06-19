@@ -7,6 +7,13 @@ Uses [Eleventy](https://www.11ty.io) and [Netlify](https://www.netlify.com/) to 
 
 ✏️ Explanatory [Blog Post](https://mxb.dev/blog/webring-kit/)
 
+## sirodoht fork changes
+
+* No .scss styles
+* No node-sass
+* No gulp
+* No scourge of the earth aka node-gyp
+
 ## Features
 
 * Admins manage the ring on Github
@@ -65,8 +72,8 @@ git clone git@github.com:maxboeck/webring.git
 cd webring
 
 # install dependencies
-yarn
+npm install
 
-# start a local build server and the gulp pipeline
-yarn start
+# start a local build server
+npm run build
 ```
