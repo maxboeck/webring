@@ -15,13 +15,11 @@
     "build:lambda": "netlify-lambda build _lambda"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.8.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
-    "del": "^3.0.0",
-    "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.1",
-    "html-minifier": "^3.5.20",
-    "netlify-lambda": "^1.1.1",
-    "require-dir": "^1.2.0"
+    "@11ty/eleventy": "0.8.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "2.0.0",
+    "del": "3.0.0",
+    "html-minifier": "3.5.20",
+    "netlify-lambda": "1.1.1",
+    "require-dir": "1.2.0"
   }
 }
