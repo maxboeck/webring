@@ -9,6 +9,7 @@ Uses [Eleventy](https://www.11ty.io) and [Netlify](https://www.netlify.com/) to 
 
 ## sirodoht fork changes
 
+* No yarn
 * No .scss styles
 * No node-sass
 * No gulp
