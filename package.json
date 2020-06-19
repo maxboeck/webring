@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy && yarn run build:lambda",
+    "build": "eleventy && npm run build:lambda",
     "serve:lambda": "netlify-lambda serve _lambda",
     "build:lambda": "netlify-lambda build _lambda"
   },
