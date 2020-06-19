@@ -20,7 +20,7 @@ class WebringBanner extends HTMLElement {
           * {
             box-sizing: border-box;
           }
-        
+
           :root {
             font-size: 100%;
           }
@@ -32,7 +32,7 @@ class WebringBanner extends HTMLElement {
             font-size: 16px;
             text-align:left;
           }
-  
+
           .webring-banner {
             background-color: #FFF;
             border: 1px solid #DDD;
@@ -143,19 +143,19 @@ class WebringBanner extends HTMLElement {
                 <h3 class="webring-banner__title">
                   <a href="${this.url}">${this.ringtitle}</a>
                 </h3>
-                <span>A webring with ${this.membercount} Members</span>
+                <span>A webring with ${this.membercount} members</span>
               </div>
               <a class="webring-banner__info" href="https://en.wikipedia.org/wiki/Webring" title="What's this?">?</a>
             </div>
             <p class="webring-banner__links">
-              <a 
-                href="${this.url}/prev" 
-                class="webring-banner__link webring-banner__link--prev" 
+              <a
+                href="${this.url}/prev"
+                class="webring-banner__link webring-banner__link--prev"
                 aria-label="Go to previous site"
               >⬅️Previous</a>
               <a
                 href="${this.url}/random"
-                class="webring-banner__link webring-banner__link--random" 
+                class="webring-banner__link webring-banner__link--random"
                 aria-label="Go to a random site"
               >😎Random</a>
               <a
