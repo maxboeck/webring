@@ -38,5 +38,10 @@
         "title": "Alan Levine",
         "url": "https://cogdogblog.com/",
         "feed": "https://cogdogblog.com/feed"
+    },
+    {
+        "title": "Marius Ghita",
+        "url": "https://mhitza.github.io",
+        "feed": "https://mhitza.github.io/atom.xml"
     }
 ]
