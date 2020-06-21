@@ -1,13 +1,13 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const htmlMinifier = require('html-minifier')
 
-module.exports = function(config) {
+module.exports = function (config) {
     config.addPlugin(syntaxHighlight)
 
     config.addLayoutAlias('base', 'base.njk')
     config.addLayoutAlias('page', 'page.njk')
 
-    config.addFilter('mapNodes', function(nodes, radius, width, height) {
+    config.addFilter('mapNodes', function (nodes, radius, width, height) {
         return nodes.map((node, index) => {
             const angle = (index / (nodes.length / 2)) * Math.PI
             const x = radius * Math.cos(angle) + width / 2
@@ -22,7 +22,7 @@ module.exports = function(config) {
         })
     })
 
-    config.addTransform('htmlmin', function(content, outputPath) {
+    config.addTransform('htmlmin', function (content, outputPath) {
         if (outputPath.endsWith('.html')) {
             return htmlMinifier.minify(content, {
                 useShortDoctype: true,
@@ -43,7 +43,7 @@ module.exports = function(config) {
             layouts: 'layouts',
             data: 'data'
         },
-        templateFormats: ['njk', 'md', 'css'],
+        templateFormats: ['njk', 'md', '11ty.js'],
         htmlTemplateEngine: 'njk',
         markdownTemplateEngine: 'njk',
         passthroughFileCopy: true
