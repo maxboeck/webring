@@ -5,6 +5,12 @@ title: 'Code of Conduct'
 
 # Code of Conduct
 
-Rules for being in this webring.
+To be in this webring, you need to have an interest in technology and making things with technology.
+The rule is intentionally left vague because it's more of a "we'll know it when we see it" thing.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fuga quae labore, at adipisci mollitia consequatur possimus sint dolor corrupti unde aperiam iste cumque repudiandae enim, aliquid optio amet, quo quia. Doloribus eius atque quis. Odit, culpa saepe! Perferendis, ratione. Laboriosam ratione quod doloribus perferendis? Minus sit itaque totam eius.
+However, there is also a "don't be an asshole" rule, which says that you shouldn't be an asshole.
+The rule is intentionally left vague because it's more of a "we'll know it when we see it" thing.
+
+Basically, this code of conduct is useless, because we're going by clique aesthetic and there are no rules that can quantify that.
+
+Enjoy!
