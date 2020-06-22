@@ -5,6 +5,11 @@
         "feed": "https://feeds.feedburner.com/stavrosstuff"
     },
     {
+        "title": "Jacques Mattheij",
+        "url": "https://jacquesmattheij.com/",
+        "feed": "https://jacquesmattheij.com/rss.xml"
+    },
+    {
         "title": "WhyNot.Fail",
         "url": "https://whynot.fail/",
         "feed": "https://whynot.fail/index.xml"
