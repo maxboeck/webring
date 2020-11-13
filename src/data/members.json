@@ -58,5 +58,20 @@
         "title": "Ghost/Ukagaka Walkthrough",
         "url": "http://www.ashido.com/ukagaka/",
         "feed": null
+    },
+    {
+        "title": "Azura",
+        "url": "https://azura-levidre.000webhostapp.com/azura",
+        "feed": null
+    },
+    {
+        "title": "MiniDev",
+        "url": "https://zdzisiu.github.io/Ukagaka/md.html",
+        "feed": null
+    },
+    {
+        "title": "Cat",
+        "url": "https://zdzisiu.github.io/Ukagaka/cat.html",
+        "feed": null
     }
 ]
