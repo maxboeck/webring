@@ -1,13 +1,13 @@
 {
-    "title": "Nerds of the 90s",
-    "description": "This is just a demo of a webring. It could be about anything - Metal Bands, Knitting, Craft Beer, Accessibility... For this one, let's just say it's about the good old 90s.",
+    "title": "Ukagaka/Ghost Development and Download",
+    "description": "Dedicated sites or posts offering Ukagaka/Ghosts (little desktop doodads you can interact with) for free download, or information about Ukagaka/Ghosts in general.",
     "image": "freakazoid.jpg",
     "url": "https://webringdemo.netlify.com",
     "repo": "https://github.com/maxboeck/webring",
     "admins": [
         {
-            "name": "Max Böck",
-            "url": "https://github.com/maxboeck"
+            "name": "Bort",
+            "url": "https://github.com/coulditbebort"
         }
     ]
 }
