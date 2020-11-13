@@ -1,9 +1,9 @@
 {
     "title": "Ukagaka/Ghost Development and Download",
     "description": "Dedicated sites or posts offering Ukagaka/Ghosts (little desktop doodads you can interact with) for free download, or information about Ukagaka/Ghosts in general.",
-    "image": "freakazoid.jpg",
+    "image": "narsnowbun.png",
     "url": "https://webringdemo.netlify.com",
-    "repo": "https://github.com/maxboeck/webring",
+    "repo": "https://github.com/coulditbebort/webring",
     "admins": [
         {
             "name": "Bort",
