@@ -1,47 +1,22 @@
 [
     {
-        "title": "Max Böck",
-        "url": "https://mxb.dev/",
-        "feed": "https://mxb.dev/feed.xml"
-    },
-    {
-        "title": "Manuel Matuzovic",
-        "url": "https://www.matuzo.at/",
-        "feed": "https://www.matuzo.at/feed.xml"
-    },
-    {
-        "title": "Charlie Owen",
-        "url": "https://www.sonniesedge.net/",
+        "title": "Hunter and Smoker",
+        "url": "http://ashido.com/huntersmoker/ukagaka.html",
         "feed": null
     },
     {
-        "title": "Björn Ganslandt",
-        "url": "https://ganslandt.xyz/",
+        "title": "Dr. W.D. Gaster",
+        "url": "http://www.drdowasure.com/gaster/",
         "feed": null
     },
     {
-        "title": "Jan Hrubý",
-        "url": "https://www.mrozilla.cz/",
+        "title": "Radic and Farnsworth",
+        "url": "http://www.ashido.com/nplu/ghost/",
         "feed": null
     },
     {
-        "title": "Zach Leatherman",
-        "url": "https://www.zachleat.com/",
-        "feed": "https://www.zachleat.com/web/feed/"
-    },
-    {
-        "title": "Steve Gardner",
-        "url": "https://ste.vg",
+        "title": "TEMMIE!!!!",
+        "url": "http://www.drdowasure.com/temtem/",
         "feed": null
-    },
-    {
-        "title": "Alan Levine",
-        "url": "https://cogdogblog.com/",
-        "feed": "https://cogdogblog.com/feed"
-    },
-    {
-        "title": "Marius Ghita",
-        "url": "https://mhitza.github.io",
-        "feed": "https://mhitza.github.io/atom.xml"
     }
 ]
