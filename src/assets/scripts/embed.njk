@@ -1,6 +1,7 @@
 ---
 permalink: 'embed.js'
 ---
+
 class WebringBanner extends HTMLElement {
     constructor() {
         super();
@@ -19,6 +20,7 @@ class WebringBanner extends HTMLElement {
         <style>
           * {
             box-sizing: border-box;
+			margin: auto;
           }
         
           :root {
@@ -29,16 +31,15 @@ class WebringBanner extends HTMLElement {
             display: block;
             width: 100%;
             font-family: sans-serif;
-            font-size: 16px;
+            font-size: 12px;
             text-align:left;
           }
   
           .webring-banner {
-            background-color: #FFF;
-            border: 1px solid #DDD;
+            border: 3px solid #DDD;
             border-radius: 8px;
             box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
-            max-width:480px;
+            max-width:75%;
           }
 
           .webring-banner a {
@@ -57,7 +58,7 @@ class WebringBanner extends HTMLElement {
             align-items: center;
             flex-wrap:wrap;
             position:relative;
-            padding: 1rem;
+            padding: 0.5rem;
             border-bottom: 1px solid #DDD;
           }
 
@@ -76,9 +77,9 @@ class WebringBanner extends HTMLElement {
 
           .webring-banner__title {
             margin:0;
-            font-size:1.25rem;
+            font-size:1.00rem;
             font-weight: bold;
-            line-height:1.2;
+            line-height:1.0;
           }
 
           .webring-banner__info {
@@ -97,12 +98,12 @@ class WebringBanner extends HTMLElement {
             top:1rem;
             right:1rem;
           }
-
+		  
           .webring-banner__links {
             display:flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            padding: 1rem;
+            padding: 0.5rem;
             margin:0;
           }
 
