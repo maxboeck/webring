@@ -37,6 +37,17 @@ layout: base
 
     {% include 'snippet.njk' %}
 
+    <p>
+    If the post or page you have for your ghost won't support the banner (or if you don't like how it looks), you can do a simpler set of links:
+    </p>
+    
+    {% highlight 'html' %}
+    <p align="center">&#128123; <i>Member of the <a href="https://ukagakawebring.netlify.com/" target="_new">Ukagaka/Ghost Development and Download</a> webring</i> &#128123;</p>
+    <p align="center">&#128123; | <a href="https://ukagakawebring.netlify.com//prev" target="_new">Previous</a> |
+    <a href="https://ukagakawebring.netlify.com//random" target="_new">Random</a> |
+    <a href="https://ukagakawebring.netlify.com//next" target="_new">Next</a> | &#128123;</p>
+    <script async src="https://ukagakawebring.netlify.com//embed.js" charset="utf-8"></script>{% endhighlight %}
+    
     <h2>Want to host your own webring?</h2>
     <p>
         If you want to start your own webring, fork 
