@@ -4,7 +4,7 @@
 {% set h = 440 %}
 {% set nodes = members|mapNodes(r, w, h) %}
 
-<svg class="map" width="{{ w }}" height="{{ h }}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+<svg class="map {% if members|length > 10 %}map--dense{% endif %}" width="{{ w }}" height="{{ h }}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
     <circle cx="{{ w/2 }}" cy="{{ h/2 }}" r="{{ r }}" class="map__circle"></circle>
     <clipPath id="map-image-mask">
         <circle cx="{{ w/2 }}" cy="{{ h/2 }}" r="{{ ri }}" />
