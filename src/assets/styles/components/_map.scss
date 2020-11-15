@@ -36,7 +36,10 @@
     .map__tooltip {
         opacity: 0;
     }
-    .map__node:hover + .map__tooltip:hover {
+    .map__tooltip:hover {
+        opacity: 1;
+    }
+    .map__node:hover {
         opacity: 1;
     }
 }
