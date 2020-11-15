@@ -40,5 +40,7 @@
     }
     .map__node:hover + .map__tooltip {
         opacity: 1;
+        font-weight: bold;
+        font-size: 12px;
     }
 }
