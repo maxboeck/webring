@@ -34,9 +34,9 @@
 
 .map--dense {
     .map__tooltip {
-        visibility: hidden;
+        opacity: 0.5;
     }
     .map__node:hover + .map__tooltip {
-        visibility: visible;
+        opacity: 1;
     }
 }
