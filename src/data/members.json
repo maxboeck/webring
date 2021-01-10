@@ -88,5 +88,15 @@
         "title": "Ukagaka Dream Team",
         "url": "https://ukagakadreamteam.com/",
         "feed": null
+    },
+    {
+        "title": "UF!Sans",
+        "url": "https://changeside.github.io/?tab=sans",
+        "feed": null
+    },
+    {
+        "title": "Snail",
+        "url": "https://changeside.github.io/?tab=snail",
+        "feed": null
     }
 ]
