@@ -1,7 +1,7 @@
 {
     "title": "UMSI Club",
-    "description": "A collection of the personal websites of members of the University of Michigan School of Information.",
-    "image": "freakazoid.jpg",
+    "description": "A 90s-style webring for the University of Michigan School of Information community.",
+    "image": "mlogo.png",
     "url": "https://umsi.club",
     "repo": "https://github.com/jshwlkr/umsi-club/",
     "admins": [

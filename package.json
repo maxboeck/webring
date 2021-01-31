@@ -1,12 +1,12 @@
 {
-  "name": "webring",
+  "name": "umsi-club",
   "version": "0.1.0",
-  "description": "A boilerplate for hosting a webring community",
-  "author": "Max Böck",
+  "description": "A 90s-style webring for the University of Michigan School of Information community.",
+  "author": "Joshua Walker",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/maxboeck/webring"
+    "url": "https://github.com/jshwlkr/umsi-club"
   },
   "scripts": {
     "start": "ELEVENTY_ENV=development eleventy --serve",
