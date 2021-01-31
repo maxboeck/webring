@@ -10,6 +10,7 @@ h6 {
 
 h1,
 .h1 {
+    color: darken($brand-primary, 10%);
     font-size: 2rem;
     text-rendering: optimizeLegibility;
 }
