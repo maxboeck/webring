@@ -1,13 +1,13 @@
 {
-    "title": "Nerds of the 90s",
-    "description": "This is just a demo of a webring. It could be about anything - Metal Bands, Knitting, Craft Beer, Accessibility... For this one, let's just say it's about the good old 90s.",
+    "title": "UMSI Club",
+    "description": "A collection of the personal websites of members of the University of Michigan School of Information.",
     "image": "freakazoid.jpg",
-    "url": "https://webringdemo.netlify.com",
-    "repo": "https://github.com/maxboeck/webring",
+    "url": "https://umsi.club",
+    "repo": "https://github.com/jshwlkr/umsi-club/",
     "admins": [
         {
-            "name": "Max Böck",
-            "url": "https://github.com/maxboeck"
+            "name": "Joshua Walker",
+            "url": "https://jshwlkr.info/"
         }
     ]
 }
