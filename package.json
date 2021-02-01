@@ -9,7 +9,7 @@
     "url": "https://github.com/jshwlkr/umsi-club"
   },
   "scripts": {
-    "start": "ELEVENTY_ENV=development eleventy --serve",
+    "start": "cross-env ELEVENTY_ENV=development eleventy --serve",
     "build": "ELEVENTY_ENV=production eleventy && npm run build:lambda",
     "serve:lambda": "netlify-lambda serve _lambda",
     "build:lambda": "netlify-lambda build _lambda"
@@ -22,5 +22,8 @@
     "html-minifier": "^4.0.0",
     "netlify-lambda": "^1.6.3",
     "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
