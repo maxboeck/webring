@@ -3,5 +3,10 @@
         "title": "Bridget!",
         "url": "https://www.bridgetsiniakov.com/",
         "feed": ""
+    },
+    {
+        "title": "Alissa's Portfolio",
+        "url": "https://alissatalleypixley.com/",
+        "feed": "https://alissatalleypixley.com/feed/"
     }
 ]
