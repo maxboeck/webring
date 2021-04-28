@@ -66,7 +66,7 @@
     },
     {
         "title": "Azura",
-        "url": "https://azura-levidre.000webhostapp.com/azura",
+        "url": "https://levidre.github.io/",
         "feed": null
     },
     {
@@ -102,6 +102,11 @@
     {
         "title": "Snail",
         "url": "https://changeside.github.io/?tab=snail",
+        "feed": null
+    },
+    {
+        "title": "Squid",
+        "url": "https://changeside.github.io/?tab=squid",
         "feed": null
     }
 ]
