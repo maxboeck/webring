@@ -1,0 +1,59 @@
+README.md
+Kit de inicio Webring
+Una plantilla para alojar su propia comunidad de sitios, también conocida como webring .
+Inspirado en publicaciones de Tatiana Mac y Charlie Owen .
+
+Utiliza Eleventy y Netlify para crear un directorio central para los sitios miembros. La gente puede enlazar a /prev, /randomy /nexty redirigido a miembros del anillo.
+
+✏️Entrada de blog explicativa
+
+Características
+Los administradores administran el anillo en Github
+Los miembros se definen en src/data/members.json
+Permita que las personas agreguen su sitio a través de una solicitud de extracción o envíelo a través de un formulario de correo electrónico
+Publica un código de conducta.
+Proporcione un código de inserción que muestre un banner (como un componente web).
+Publicar un índice de todos los canales RSS de los miembros.
+mostrar un mapa SVG del anillo y sus miembros
+Ejemplo
+Vea el sitio de demostración generado por este código.
+
+Cómo organizar un anillo
+Bifurcar este repositorio
+Edita src/data/meta.jsony completa la información de tu comunidad
+Agrega una imagen de avatar para tu anillo src/assets/images
+Eliminar los miembros de la demostración en src/data/members.json
+Implemente su sitio en Netlify
+Una vez que haya configurado un dominio, introdúzcalo meta.jsontambién.
+Implementar en Netlify
+
+Insertar banner
+Los miembros pueden copiar un fragmento de código e incrustarlo en sus sitios. Representa un componente web (con los enlaces desnudos como respaldo).
+
+El sitio de índice producirá un código de inserción con la URL y el título de su anillo:
+
+< WebRing-banner > 
+    < p > Miembro de < un  href =" {{su-url}} " > {{su-título}} </ a > </ p > 
+    < un  href =" {{su-url} } / prev " > Anterior </ a > 
+    < un  href =" {{su-url}} / random " > Random </ a > 
+    < un  href =" {{su-url}} / siguiente "> Siguiente</ a > 
+</ webring-banner > 
+< script  async  src = " {{su-url}} / embed.js " charset = " utf-8 " > </ script >
+El diseño depende de los administradores del anillo. Podría verse algo como esto:
+
+el widget de banner
+
+Desarrollo local
+Para construir el sitio localmente, ejecute estos comandos:
+
+# clonar este repositorio
+git clone git@github.com: maxboeck / webring.git
+
+# ir al directorio de trabajo 
+cd webring
+
+# instalar dependencias
+hilo
+
+# inicia un servidor de compilación local y 
+comienza el hilo de la canalizació
