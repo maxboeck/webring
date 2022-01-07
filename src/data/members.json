@@ -139,9 +139,14 @@
         "url": "http://www.drdowasure.com/spamton/",
         "feed": null
     },
-	{
+    {
         "title": "Zim and GIR",
         "url": "https://levidre.github.io/ukagaka/zim-and-gir",
+        "feed": null
+    },
+    {
+        "title": "Dreamtale Sans",
+        "url": "https://dreamtalesans.neocities.org/",
         "feed": null
     }
 ]
