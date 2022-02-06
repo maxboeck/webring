@@ -4,32 +4,24 @@ layout: base
 
 {% include 'webring.njk' %}
 
-<div class="markdown">
-    <p>
-        Join this webring by <a href="{{ meta.repo }}">opening a pull request</a>.
-        Add the name of your site, the url URL, and RSS feed if you have one to
-        <code>src/data/members.json</code>.
-    </p>
+<p>
+  Join this webring by <a href="{{ meta.repo }}">opening a pull request</a>.
+  Add the name of your site, the URL, and the RSS feed if you have one to
+  <code>src/data/members.json</code>.
+</p>
 
-    <p>
-        Once you've joined the ring, copy this code snippet into your site:
-        copy this code snippet into your site:
-    </p>
+<p>
+  Once you've joined the ring, put something like this code snippet into your site:
+</p>
 
-    {% highlight 'html' %}{% include 'snippet.njk' %}{% endhighlight %}
+{% highlight 'html' %}{% include 'snippet.njk' %}{% endhighlight %}
 
-    <p>
-        to render the following banner with links to other member sites.
-    </p>
+<p>
+  to render a banner with links to other member sites. Style as you please.
+</p>
 
-    {% include 'snippet.njk' %}
+{% include 'snippet.njk' %}
 
-    <h2>Want to host your own webring?</h2>
-    <p>
-        If you want to start your own webring, fork 
-        <a href="https://github.com/maxboeck/webring">this project</a> on Github 
-        and follow the instructions in the README.
-    </p>
-
-    {% include 'github.njk' %}
-</div>
+<p>
+  Forked from <a href="https://github.com/maxboeck/webring">this webring starter kit</a>.
+</p>

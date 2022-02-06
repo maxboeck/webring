@@ -1,7 +1,13 @@
-<webring-banner>
-    <p>Member of the <a href="{{ meta.url }}">{{ meta.title }}</a> webring</p>
+<div class="webring-banner">
+  <div class="webring-banner__header">
+    <img class="webring-banner__image" src="{{ meta.url }}/assets/images/{{ meta.image }}" alt="'Robotbil' by Jakob Vala" />
+    <p class="webring-banner__description">
+      This site is part of the <a href="{{ meta.url }}">{{ meta.title }}</a> webring.
+    </p>
+  </div>
+  <p class="webring-banner__links">
     <a href="{{ meta.url }}/prev">Previous</a>
     <a href="{{ meta.url }}/random">Random</a>
     <a href="{{ meta.url }}/next">Next</a>
-</webring-banner>
-<script async src="{{ meta.url }}/embed.js" charset="utf-8"></script>
+  </p>
+</div>

@@ -1,0 +1,31 @@
+.webring-banner {
+  max-width: 480px;
+  border: 1px solid #DDD;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.webring-banner__header {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #DDD;
+}
+
+.webring-banner__description {
+  width: 50%;
+  padding: 1rem;
+}
+
+.webring-banner__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 25%;
+  padding: 1rem;
+  margin: 0;
+}
+
+.webring-banner__links {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
