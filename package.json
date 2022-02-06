@@ -17,8 +17,7 @@
     "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "html-minifier": "^4.0.0",
-    "netlify-lambda": "^2.0.15",
-    "node-sass": "^7.0.1"
+    "netlify-lambda": "^2.0.15"
   },
   "dependencies": {
     "package.json": "^2.0.1"
