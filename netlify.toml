@@ -1,7 +1,8 @@
 [build]
-  command = "npm run build"
-  publish = "dist"
-  Functions = "functions"
+  publish = "_site"
+  command = "DEBUG=* eleventy"
+  functions = "functions"
+
 
 [[headers]]
     for = "/*"

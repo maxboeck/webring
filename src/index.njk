@@ -5,34 +5,21 @@ layout: base
 {% include 'webring.njk' %}
 
 <div class="markdown">
-    <h2>What's this?</h2>
     <p>
-        A community of sites around a common topic, also known as a <a href="https://en.wikipedia.org/wiki/Webring">webring</a>. 
-        Each member includes a badge on their site that links to the previous and next sites in the ring. 
-        Kids in the 90s used to love it!
+        Join this webring by <a href="{{ meta.repo }}">opening a pull request</a>.
+        Add the name of your site, the url URL, and RSS feed if you have one to
+        <code>src/data/members.json</code>.
     </p>
 
-    <h2>How to join</h2>
-    <p>
-        To join the webring, <a href="{{ meta.repo }}/compare">open a pull request</a> 
-        and supply the name and URL of your site. If you publish a RSS feed, you can provide that as well.
-    </p>
-    <p>
-        If you don't have a Github account, you can also use this form to sign up. 
-        The webring admins will then look at your site and handle your request.
-    </p>
-
-    {% include 'signupform.njk' %}
-
-    <h2>Add the banner</h2>
     <p>
         Once you've joined the ring, copy this code snippet into your site:
+        copy this code snippet into your site:
     </p>
 
     {% highlight 'html' %}{% include 'snippet.njk' %}{% endhighlight %}
 
     <p>
-        It will render this banner that links to the other members:
+        to render the following banner with links to other member sites.
     </p>
 
     {% include 'snippet.njk' %}

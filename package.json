@@ -10,12 +10,14 @@
   },
   "main": ".eleventy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "netlify-lambda install _lambda"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "html-minifier": "^4.0.0",
+    "netlify-lambda": "^2.0.15",
     "node-sass": "^7.0.1"
   },
   "dependencies": {
