@@ -1,0 +1,112 @@
+/* Colors */
+:root {
+  --gray: #C0C0C0;
+  --darkgray: #333;
+  --darkblue: #092762;
+  --blue: #5B6F96;
+  --forground: #FFF;
+  --background: #333;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: arial, sans-serif;
+  color: var(--forground);
+  background: url(/assets/images/robotbill-tiny.png) repeat;
+  background-color: var(--background);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.layout {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 80ch;
+  background-color: var(--background);
+}
+
+/* header, */
+/* main, */
+/* footer { */
+/*   width: 100%; */
+/*   max-width: 80ch; */
+/* } */
+
+/* main :first-child { */
+/*   margin-top: 1rem; */
+/* } */
+
+table {
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border-style: ridge;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+a {
+  color: rgb(159, 210, 255);
+}
+
+a:visited {
+  color: rgb(196, 159, 255)
+}
+
+.webring__body table {
+  width: 100%;
+}
+
+.webring-banner {
+  max-width: 480px;
+  /* border: 1px solid #DDD; */
+  /* border-radius: 8px; */
+  border-style: ridge;
+  margin: 10px 0;
+}
+
+.webring-banner__header {
+  display: flex;
+  flex-wrap: wrap;
+  /* border-bottom: 1px solid #DDD; */
+  border-bottom: ridge;
+}
+
+.webring-banner__description {
+  width: 50%;
+  padding: 1rem;
+  margin: 0;
+  border-left: ridge;
+}
+
+.webring-banner__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 25%;
+  padding: 1rem;
+  margin: 0;
+}
+
+.webring-banner__links {
+  display: flex;
+  justify-content: center;
+}
+
+.webring-banner__links a::before {
+  content: "["
+}
+
+.webring-banner__links a::after {
+  content: "]";
+}

@@ -1,7 +1,7 @@
 {
     "title": "Robot Friends",
     "description": "A webring for robots and friends of robots",
-    "image": "robotbill.jpg",
+    "image": "robotbill-painting-small.jpg",
     "url": "https://robot-friend-ring.netlify.app",
     "repo": "https://github.com/robotbill/webring",
     "admins": [

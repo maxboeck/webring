@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>{{ title or meta.title }}</title>
+  <title>{{ title or meta.title }}</title>
 
-    <link rel="stylesheet" href="{{ '/assets/styles/main.css' | url }}">
-    <link type="application/atom+xml" rel="alternate" href="feeds.xml" title="{{ meta.title }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/prism-twilight.css' | url }}">
+  <link type="application/atom+xml" rel="alternate" href="feeds.xml" title="{{ meta.title }}">
 </head>
 <body>
-    <div class="layout">
-        <main class="layout__primary">
-            <div class="layout__content">
-                {{ content | safe }}
-            </div>
-        </main>
-        <aside class="layout__secondary">
-            {% include 'map.njk' %}
-        </aside>
-    </div>
+  <div class="layout">
+    <main class="layout__primary">
+      <div class="layout__content">
+        {{ content | safe }}
+      </div>
+    </main>
+  </div>
 </body>
 </html>
 
