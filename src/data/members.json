@@ -1,52 +1,7 @@
 [
     {
-        "title": "Max Böck",
-        "url": "https://mxb.dev/",
-        "feed": "https://mxb.dev/feed.xml"
-    },
-    {
-        "title": "Manuel Matuzovic",
-        "url": "https://www.matuzo.at/",
-        "feed": "https://www.matuzo.at/feed.xml"
-    },
-    {
-        "title": "Charlie Owen",
-        "url": "https://www.sonniesedge.net/",
-        "feed": null
-    },
-    {
-        "title": "Björn Ganslandt",
-        "url": "https://ganslandt.xyz/",
-        "feed": null
-    },
-    {
-        "title": "Jan Hrubý",
-        "url": "https://www.mrozilla.cz/",
-        "feed": null
-    },
-    {
-        "title": "Zach Leatherman",
-        "url": "https://www.zachleat.com/",
-        "feed": "https://www.zachleat.com/web/feed/"
-    },
-    {
-        "title": "Steve Gardner",
-        "url": "https://ste.vg",
-        "feed": null
-    },
-    {
-        "title": "Alan Levine",
-        "url": "https://cogdogblog.com/",
-        "feed": "https://cogdogblog.com/feed"
-    },
-    {
-        "title": "Marius Ghita",
-        "url": "https://mhitza.github.io",
-        "feed": "https://mhitza.github.io/atom.xml"
-    },
-    {
-        "title": "Rings around the Internet",
-        "url": "https://fanlistings.nickifaulk.com/webrings/",
-        "feed": null
+        "title": "Locker785",
+        "url": "https://locker785.com",
+        "feed": "https://locker785.com/feed/feed.xml"
     }
 ]
