@@ -1,26 +1,24 @@
 {
   "name": "webring",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A boilerplate for hosting a webring community",
   "author": "Max Böck",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/maxboeck/webring"
+    "url": "http://github.com/robotbill/webring"
   },
+  "main": ".eleventy.js",
   "scripts": {
-    "start": "ELEVENTY_ENV=development eleventy --serve",
-    "build": "ELEVENTY_ENV=production eleventy && npm run build:lambda",
-    "serve:lambda": "netlify-lambda serve _lambda",
-    "build:lambda": "netlify-lambda build _lambda"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "html-minifier": "^4.0.0",
+    "node-sass": "^7.0.1"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.11.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "clean-css": "^4.2.3",
-    "cssesc": "^3.0.0",
-    "html-minifier": "^4.0.0",
-    "netlify-lambda": "^1.6.3",
-    "node-sass": "^4.14.1"
+    "package.json": "^2.0.1"
   }
 }

@@ -1,8 +1,6 @@
 const fs = require('fs')
 const path = require('path')
 const sass = require('node-sass')
-const CleanCSS = require('clean-css')
-const cssesc = require('cssesc')
 
 const isProd = process.env.ELEVENTY_ENV === 'production'
 
@@ -34,20 +32,6 @@ module.exports = class {
                 }
                 resolve(result.css.toString())
             })
-        })
-    }
-
-    // Minify & Optimize with CleanCSS in Production
-    async minify(css) {
-        return new Promise((resolve, reject) => {
-            if (!isProd) {
-                resolve(css)
-            }
-            const minified = new CleanCSS().minify(css)
-            if (!minified.styles) {
-                return reject(minified.error)
-            }
-            resolve(minified.styles)
         })
     }
 
@@ -99,9 +83,7 @@ module.exports = class {
     // render the CSS file
     async render({ entryPath }) {
         try {
-            const css = await this.compile({ file: entryPath })
-            const result = await this.minify(css)
-            return result
+            return await this.compile({ file: entryPath })
         } catch (err) {
             // if things go wrong
             if (isProd) {
