@@ -1,8 +1,7 @@
 [build]
-  publish = "_site"
+  publish = "dist"
   command = "DEBUG=* eleventy"
   functions = "functions"
-
 
 [[headers]]
     for = "/*"
