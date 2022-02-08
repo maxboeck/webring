@@ -15,6 +15,11 @@
         "feed": null
     },
     {
+        "title": "Chris Bergeron's Tech Blog",
+        "url": "https://chrisbergeron.com/",
+        "feed": "https://chrisbergeron.com/rss2.xml"
+    },
+    {
         "title": "Björn Ganslandt",
         "url": "https://ganslandt.xyz/",
         "feed": null
