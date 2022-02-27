@@ -1,22 +1,22 @@
 [
     {
-        "title": "Max Böck",
-        "url": "https://mxb.dev/",
-        "feed": "https://mxb.dev/feed.xml"
-    },
-    {
-        "title": "Manuel Matuzovic",
-        "url": "https://www.matuzo.at/",
-        "feed": "https://www.matuzo.at/feed.xml"
-    },
-    {
-        "title": "Charlie Owen",
-        "url": "https://www.sonniesedge.net/",
+        "title": "Tountas Iakovos Iason",
+        "url": "https://u2nmd.github.io/online-cv/",
         "feed": null
     },
     {
-        "title": "Björn Ganslandt",
-        "url": "https://ganslandt.xyz/",
+        "title": "Aimilios Pavlidis",
+        "url": "https://aimiliospavlidis2001.github.io/online-cv/",
+        "feed": null
+    },
+    {
+        "title": "Thomas-Spuridon Paschalis",
+        "url": "https://p19pasc.github.io/online-cv/",
+        "feed": null
+    },
+    {
+        "title": "Vasileios-Basir Kampani",
+        "url": "https://vasiliskampani.github.io/online-cv/",
         "feed": null
     },
     {
@@ -27,7 +27,7 @@
     {
         "title": "Zach Leatherman",
         "url": "https://www.zachleat.com/",
-        "feed": "https://www.zachleat.com/web/feed/"
+        "feed": null
     },
     {
         "title": "Steve Gardner",
@@ -37,12 +37,12 @@
     {
         "title": "Alan Levine",
         "url": "https://cogdogblog.com/",
-        "feed": "https://cogdogblog.com/feed"
+        "feed": null
     },
     {
         "title": "Marius Ghita",
         "url": "https://mhitza.github.io",
-        "feed": "https://mhitza.github.io/atom.xml"
+        "feed": null
     },
     {
         "title": "Rings around the Internet",
