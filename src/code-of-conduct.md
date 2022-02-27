@@ -1,10 +1,9 @@
 ---
 layout: page
-title: 'Code of Conduct'
+title: 'Οδηγίες προς τα μέλη της ομάδας'
 ---
 
-# Code of Conduct
+# Οδηγίες προς τα μέλη της ομάδας
 
-Rules for being in this webring.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fuga quae labore, at adipisci mollitia consequatur possimus sint dolor corrupti unde aperiam iste cumque repudiandae enim, aliquid optio amet, quo quia. Doloribus eius atque quis. Odit, culpa saepe! Perferendis, ratione. Laboriosam ratione quod doloribus perferendis? Minus sit itaque totam eius.
+Για όποια τυχόν αλλαγή επιθυμείτε να κάνετε εντός του webring, απλά κάντε pull request στο master και από εκεί και πέρα θα το κάνω merge εγώ.
+<br><br>[Ο admin σας](https://github.com/u2nmd)
