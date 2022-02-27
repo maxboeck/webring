@@ -1,13 +1,13 @@
 [
     {
-        "title": "Max Böck",
-        "url": "https://mxb.dev/",
-        "feed": "https://mxb.dev/feed.xml"
+        "title": "Tountas Iakovos Iason",
+        "url": "",
+        "feed": null
     },
     {
         "title": "Manuel Matuzovic",
         "url": "https://www.matuzo.at/",
-        "feed": "https://www.matuzo.at/feed.xml"
+        "feed": null
     },
     {
         "title": "Charlie Owen",
@@ -27,7 +27,7 @@
     {
         "title": "Zach Leatherman",
         "url": "https://www.zachleat.com/",
-        "feed": "https://www.zachleat.com/web/feed/"
+        "feed": null
     },
     {
         "title": "Steve Gardner",
@@ -37,12 +37,12 @@
     {
         "title": "Alan Levine",
         "url": "https://cogdogblog.com/",
-        "feed": "https://cogdogblog.com/feed"
+        "feed": null
     },
     {
         "title": "Marius Ghita",
         "url": "https://mhitza.github.io",
-        "feed": "https://mhitza.github.io/atom.xml"
+        "feed": null
     },
     {
         "title": "Rings around the Internet",
