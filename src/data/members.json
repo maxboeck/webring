@@ -10,6 +10,16 @@
         "feed": null
     },
     {
+        "title": "",
+        "url": "",
+        "feed": null
+    },
+    {
+        "title": "",
+        "url": "",
+        "feed": null
+    },
+    {
         "title": "Thomas Spuridon Paschalis",
         "url": "https://p19pasc.github.io/online-cv/",
         "feed": null
@@ -18,16 +28,6 @@
         "title": "Vasileios-Basir Kampani",
         "url": "https://vasiliskampani.github.io/online-cv/",
         "feed": null
-    },
-    {
-        "title": "Jan Hrubý",
-        "url": "https://www.mrozilla.cz/",
-        "feed": null
-    },
-    {
-        "title": "Zach Leatherman",
-        "url": "https://www.zachleat.com/",
-        "feed": "https://www.zachleat.com/web/feed/"
     },
     {
         "title": "Steve Gardner",
