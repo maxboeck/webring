@@ -50,13 +50,13 @@
         "feed": null
     },
     {
-        "title": "test node",
-        "url": "https://webmail.ionio.gr/?_task=mail&_mbox=INBOX",
+        "title": "",
+        "url": "",
         "feed": null
     },
     {
-        "title": "test node 2",
-        "url": "https://github.com/OompaLoompas/webring/edit/master/src/data/members.json",
+        "title": "",
+        "url": "",
         "feed": null
     }
 ]
