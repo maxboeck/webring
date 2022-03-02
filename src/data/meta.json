@@ -3,7 +3,7 @@
     "description": "This is a webring for the github organization 'Ionioteam'. It's a part of the Software Technology class in Ionian University, department of Informatics. We are a team of 5 students, aiming to learn how to host and deploy websites.",
     "image": "artic.png",
     "icon": "",
-    "url": "https://ionioteam.netlify.app/",
+    "url": "https://pedantic-babbage-66c195.netlify.app/",
     "repo": "https://github.com/Ionioteam/webring",
     "admins": [
         {
