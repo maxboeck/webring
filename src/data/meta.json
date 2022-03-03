@@ -1,5 +1,5 @@
 {
-    "title": "Ionioteam",
+    "title": "ionioteam",
     "description": "This is a webring for the github organization 'Ionioteam'. It's a part of the Software Technology class in Ionian University, department of Informatics. We are a team of 5 students, aiming to learn how to host and deploy websites.",
     "image": "artic.png",
     "icon": "",
@@ -11,20 +11,6 @@
             "url": "https://github.com/axilleasmandravelis"
         }
     ]
-
-
-<opml version="1.0">
-<head>
-<title>Ionioteam Member Feeds</title>
-</head>
-<body>
-<outline type="rss" text="Axilleas Mandravelis" title="axilleasmandravelis" />
-<outline type="rss" text="Nikolaos Boutouridis" title="Nikosbout"/>
-<outline type="rss" text="Pinelopi Simtsi" title="p17simt"/>
-</body>
-</opml>
-
-
 }
 
 
