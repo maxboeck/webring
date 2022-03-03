@@ -11,6 +11,18 @@
             "url": "https://github.com/axilleasmandravelis"
         }
     ]
-}
+<opml version="1.0">
+<style class="adjust-screen-brightness" media="screen">html:before { content: " "; z-index: 2147483647; pointer-events: none; position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.38); }</style>
+<head>
+<title>Ionioteam Member Feeds</title>
+</head>
+<body>
+<outline type="rss" text="pinelopi" title="pinelopi" xmlUrl="https://mxb.dev/feed.xml" htmlUrl="https://mxb.dev/"/>
+<outline type="rss" text="Manuel Matuzovic" title="Manuel Matuzovic" xmlUrl="https://www.matuzo.at/feed.xml" htmlUrl="https://www.matuzo.at/"/>
+<outline type="rss" text="Zach Leatherman" title="Zach Leatherman" xmlUrl="https://www.zachleat.com/web/feed/" htmlUrl="https://www.zachleat.com/"/>
+<outline type="rss" text="Alan Levine" title="Alan Levine" xmlUrl="https://cogdogblog.com/feed" htmlUrl="https://cogdogblog.com/"/>
+<outline type="rss" text="Marius Ghita" title="Marius Ghita" xmlUrl="https://mhitza.github.io/atom.xml" htmlUrl="https://mhitza.github.io"/>
+</body>
+</opml>}
 
 
