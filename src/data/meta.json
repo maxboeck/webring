@@ -11,16 +11,4 @@
             "url": "https://github.com/axilleasmandravelis"
         }
     ]
-
-
-<opml version="1.0">
-<head>
-<title>Ionioteam Member Feeds</title>
-</head>
-<body>
-<outline type="rss" text="Axilleas Mandravelis" title="axilleasmandravelis" />
-<outline type="rss" text="Nikolaos Boutouridis" title="Nikosbout"/>
-<outline type="rss" text="Pinelopi Simtsi" title="p17simt"/>
-</body>
-</opml>
 }
