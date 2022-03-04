@@ -1,0 +1,7 @@
+<webring-banner>
+    <p>Member of <a href="{{ https://ionioteam.netlify.app }}">{{ axilleasmandravelis }}</a></p>
+    <a href="{{ https://axilleasmandravelis.github.io/online-cv/ }}/prev">Previous</a>
+    <a href="{{ https://axilleasmandravelis.github.io/online-cv/ }}/random">Random</a>
+    <a href="{{ https://axilleasmandravelis.github.io/online-cv/ }}/next">Next</a>
+</webring-banner>
+<script async src="{{ https://axilleasmandravelis.github.io/online-cv/ }}/embed.js" charset="utf-8"></script>
