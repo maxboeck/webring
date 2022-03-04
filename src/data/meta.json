@@ -2,12 +2,12 @@
     "title": "ionioteam",
     "description": "This is our webring.",
     "image": "",
-    "url": "https://vigilant-hypatia-f01019.netlify.com",
-    "repo": "https://github.com/p17simt/webring-1",
+    "url": "https://ionioteam-webring.netlify.app",
+    "repo": "https://github.com/p17simt/webring",
     "admins": [
         {
             "name": "Pinelopi Simtsi",
-            "url": "https://github.com/p17simt"
+            "url": "https://p17simt.github.io/online-cv"
         },
         {
             "name": "Axilleas Mandravelis",
