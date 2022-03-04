@@ -1,14 +1,17 @@
 {
     "title": "ionioteam",
-    "description": "This is a webring for the github organization 'Ionioteam'. It's a part of the Software Technology class in Ionian University, department of Informatics. We are a team of 5 students, aiming to learn how to host and deploy websites.",
-    "image": "artic.png",
-    "icon": "",
-    "url": "https://pedantic-babbage-66c195.netlify.app/",
-    "repo": "https://github.com/ionioteam/webring",
+    "description": "This is our webring.",
+    "image": "",
+    "url": "https://ionioteam-webring.netlify.app",
+    "repo": "https://github.com/p17simt/webring",
     "admins": [
         {
-            "name": "axilleasmadravelis",
-            "url": "https://github.com/axilleasmandravelis"
+            "name": "Pinelopi Simtsi",
+            "url": "https://p17simt.github.io/online-cv"
+        },
+        {
+            "name": "Axilleas Mandravelis",
+            "url": "https://axilleasmandravelis.github.io/online-cv"
         }
     ]
 }
