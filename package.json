@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/maxboeck/webring"
+    "url": "https://github.com/ionioteam/webring"
   },
   "scripts": {
     "start": "ELEVENTY_ENV=development eleventy --serve",
