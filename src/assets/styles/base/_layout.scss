@@ -7,7 +7,7 @@ body {
     font-family: $font-family-system;
     font-size: $font-size-base;
     line-height: $line-height-base;
-    color: $body-color;
+    color: #e26200;
     text-align: left;
     background-color: $body-bg;
 }
@@ -23,12 +23,13 @@ body {
     &__primary {
         flex: 1 0 auto;
         padding: 1rem;
-        background-color: #fff;
+        background-color: #243c01;
         box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
     }
 
     &__secondary {
         display: none;
+        color:white;
     }
 
     &__content {
