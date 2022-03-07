@@ -9,7 +9,13 @@ body {
     line-height: $line-height-base;
     color: #e26200;
     text-align: left;
-    background-color: $body-bg;
+    background-image: url("/assets/images/oompa_loo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .layout {
