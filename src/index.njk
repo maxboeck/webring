@@ -15,18 +15,9 @@ layout: base
         To join the webring, <a href="{{ meta.repo }}/compare">open a pull request</a> 
         and supply the name and URL of your site.
     </p>
-    <p>
-        If you don't have a Github account, you can also use this form to sign up. 
-        The webring admins will then look at your site and handle your request.
-    </p>
-
+    
     {% include 'signupform.njk' %}
-
-    <h2>Add the banner</h2>
-    <p>
-        Once you've joined the ring, copy this code snippet into your site:
-    </p>
-
+    
     {% highlight 'html' %}{% include 'snippet.njk' %}{% endhighlight %}
 
     {% include 'snippet.njk' %}
