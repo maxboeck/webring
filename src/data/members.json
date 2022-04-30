@@ -1,52 +1,30 @@
 [
     {
-        "title": "Max Böck",
-        "url": "https://mxb.dev/",
-        "feed": "https://mxb.dev/feed.xml"
+        "title": "Axilleas Mandravelis",
+        "url": "https://axilleasmandravelis.github.io/online-cv",
+        "feed": "null"
     },
     {
-        "title": "Manuel Matuzovic",
-        "url": "https://www.matuzo.at/",
-        "feed": "https://www.matuzo.at/feed.xml"
+        "title": "Nikolaos Boutouridis",
+        "url": "https://nikosbout.github.io/online-cv/",
+        "feed": "null"
     },
     {
-        "title": "Charlie Owen",
-        "url": "https://www.sonniesedge.net/",
+        "title": "Pinelopi Simtsi",
+        "url": "https://p17simt.github.io/online-cv/",
         "feed": null
     },
     {
-        "title": "Björn Ganslandt",
-        "url": "https://ganslandt.xyz/",
+      "title": "Panagiotis Papathanasiou",
+        "url": "https://p17papa.github.io/online-cv/",
         "feed": null
+   
+        
     },
     {
-        "title": "Jan Hrubý",
-        "url": "https://www.mrozilla.cz/",
-        "feed": null
-    },
-    {
-        "title": "Zach Leatherman",
-        "url": "https://www.zachleat.com/",
-        "feed": "https://www.zachleat.com/web/feed/"
-    },
-    {
-        "title": "Steve Gardner",
-        "url": "https://ste.vg",
-        "feed": null
-    },
-    {
-        "title": "Alan Levine",
-        "url": "https://cogdogblog.com/",
-        "feed": "https://cogdogblog.com/feed"
-    },
-    {
-        "title": "Marius Ghita",
-        "url": "https://mhitza.github.io",
-        "feed": "https://mhitza.github.io/atom.xml"
-    },
-    {
-        "title": "Rings around the Internet",
-        "url": "https://fanlistings.nickifaulk.com/webrings/",
+        "title": "Mpalomenos Spyridon",
+        "url": "https://p17balo.github.io/online-cv/",
         "feed": null
     }
+
 ]
