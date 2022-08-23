@@ -64,9 +64,24 @@
         "url": "https://zichqec.github.io/s-the-skeleton/ukatranslator",
         "feed": null
     },
-     {
+    {
         "title": "CT Epoch Jam",
         "url": "https://zichqec.github.io/s-the-skeleton/ct_epoch_jam",
+        "feed": null
+    },
+    {
+        "title": "Balloons",
+        "url": "https://zichqec.github.io/s-the-skeleton/balloons_ghost",
+        "feed": null
+    },
+    {
+        "title": "Needle",
+        "url": "https://zichqec.github.io/s-the-skeleton/needle",
+        "feed": null
+    },
+    {
+        "title": "Paper",
+        "url": "https://zichqec.github.io/s-the-skeleton/paper",
         "feed": null
     },
     {
