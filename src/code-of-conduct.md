@@ -7,4 +7,6 @@ title: 'Code of Conduct'
 
 Rules for being in this webring.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fuga quae labore, at adipisci mollitia consequatur possimus sint dolor corrupti unde aperiam iste cumque repudiandae enim, aliquid optio amet, quo quia. Doloribus eius atque quis. Odit, culpa saepe! Perferendis, ratione. Laboriosam ratione quod doloribus perferendis? Minus sit itaque totam eius.
+No Nazis, no TERFs, no racism, sexism, or other bigotry, and generally no shitheads.
+
+This is a webring for indie ttrpg and larp sites and blogs. We welcome ttrpg podcasters, bloggers, and small press indie publishers.
