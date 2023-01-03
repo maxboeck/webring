@@ -132,11 +132,11 @@ class WebringBanner extends HTMLElement {
     <div class="wr__header">
         <img class="wr__image" src="${this.image}" alt="" part="image"/>
         <div class="wr__description" part="desc">
-            <span>This site is part of</span>
+            <span part="prefix">This site is part of</span>
             <h3 class="wr__title" part="title">
                 <a href="${this.url}">${this.ringtitle}</a>
             </h3>
-            <span>A webring with ${this.membercount} Members</span>
+            <span part="members">A webring with ${this.membercount} Members</span>
         </div>
         <div class="wr__info-wrap">
             <a class="wr__info" href="https://en.wikipedia.org/wiki/Webring" title="What's this?" part="info">?</a>
@@ -147,7 +147,7 @@ class WebringBanner extends HTMLElement {
                 href="${this.url}/prev" 
                 class="wr__link wr__link--prev" 
                 aria-label="Go to previous site"
-                part="previous"
+                part="prev"
               >&#8610; Previous</a>
         <a
                 href="${this.url}/random"
@@ -203,37 +203,35 @@ class WebringBanner2 extends WebringBanner {
     }
 </style>
 
-<div class="wr">
-    <div class="wr__header">
-        <img class="wr__image" src="${this.image}" alt="" part="image"/>
-        <div class="wr__description" part="desc">
-            <h3 class="wr__title" part="title">
-                <a href="${this.url}">${this.ringtitle}</a>
-                <span class="wr__members">(${this.membercount} Members)</span>
-                <a class="wr__info" href="https://en.wikipedia.org/wiki/Webring" title="What's this?" part="info">?</a>
-            </h3>
+<div class="wr__header">
+    <img class="wr__image" src="${this.image}" alt="" part="image"/>
+    <div class="wr__description" part="desc">
+        <h3 class="wr__title" part="title">
+            <a href="${this.url}">${this.ringtitle}</a>
+            <span class="wr__members" part="members">(${this.membercount} Members)</span>
+            <a class="wr__info" href="https://en.wikipedia.org/wiki/Webring" title="What's this?" part="info">?</a>
+        </h3>
 
-            <p class="wr__links">
-                <a 
+        <p class="wr__links">
+            <a 
                 href="${this.url}/prev" 
                 class="wr__link wr__link--prev" 
                 aria-label="Go to previous site"
-                part="previous"
+                part="prev"
               >&#8610; Prev</a>
-                <a
+            <a
                 href="${this.url}/random"
                 class="wr__link wr__link--random" 
                 aria-label="Go to a random site"
                 part="random"
               >🎲 Random</a>
-                <a
+            <a
                 href="${this.url}/next"
                 class="wr__link wr__link--next"
                 aria-label="Go to next site"
                 part="next"
               >Next &#8611;</a>
-            </p>
-        </div>
+        </p>
     </div>
 </div>
 `;}

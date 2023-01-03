@@ -39,7 +39,7 @@ layout: base
         <webring-banner></webring-banner>
     </div>
 
-    <h4>Small Banner</h4>
+    <h3>Small Banner</h3>
 
     {% highlight 'html' %}{% include 'snippet-small.njk' %}{% endhighlight %}
 
@@ -47,9 +47,15 @@ layout: base
         <webring-banner-small></webring-banner-small>
     </div>
 
-    <p>
-        It will render this banner that links to the other members:
-    </p>
+    <h3>Styling The Banner Component</h3>
+    <p>The banner is a web component can be styled using css variables and by targeting parts. See <a href="https://css-tricks.com/styling-web-components/">CSS-Tricks Styling Web Components</a> for info on this.</p>
+    <ul>
+        <li>The banner wrapper can be styled just by using the element name (i.e., <em>webring-banner</em> or <em>webrind-banner-small</em>)</li>
+        <li>Using css variables: <em>--wr-link; --wr-hover: #2b16ff; --wr-border: 1px solid #DDD;</em>
+        </li>
+        <li>Targeting the parts: <em>image, desc, prefix, title, members, info, prev, random, next</em>
+        </li>
+    </ul>
 
     <h3>Build Your Own HTML</h3>
     <p>You can also just include the image, title, and links without the web component and style it yourself.</p>
