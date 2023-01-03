@@ -10,6 +10,7 @@ This is a webring for indie ttrpg and larp community. We welcome groups, mini-co
 ## Rules
 
 1. No Nazis, no TERFs, no racism, sexism, or other bigotry, and generally no shitheads.
-2. To be part of this webring your site must be active and you must add the webring component somewhere on your site (usually webrings are included in the footer on the homepage, but you do you).
+2. All who join should strive to create a culture of respect and support for all — no matter their ethnicity, gender, sexuality, or disabilities.
+3. To be part of this webring your site must be active and you must add the webring component somewhere on your site (usually webrings are included in the footer on the homepage, but you do you).
 
 We reserve the right to remove any site who does not abide by the above.
