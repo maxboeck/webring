@@ -11,10 +11,10 @@
 
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="{{meta.image}}"/>
+        <meta property="og:url" content="{{meta.url}}/assets/images/{{meta.image}}"/>
         <meta property="og:title" content="{{ title or meta.title }}"/>
         <meta property="og:description" content="{{meta.description}}"/>
-        <meta property="og:image" content="{{meta.image}}"/>
+        <meta property="og:image" content="{{meta.url}}/assets/images/{{meta.image}}"/>
 
         <link rel="stylesheet" href="{{ '/assets/styles/main.css' | url }}">
         <link type="application/atom+xml" rel="alternate" href="feeds.xml" title="{{ meta.title }}">
