@@ -12,37 +12,51 @@ layout: base
         Kids in the 90s used to love it!
     </p>
 
-    <h2>How to join</h2>
+    <h2>How to join!</h2>
     <p>
         To join the webring, <a href="{{ meta.repo }}/compare">open a pull request</a> 
-        and supply the name and URL of your site. If you publish a RSS feed, you can provide that as well.
+        and supply the name and URL of your site. If you publish a RSS feed or have a social media link, you can provide that as well.
     </p>
     <p>
         If you don't have a Github account, you can also use this form to sign up. 
         The webring admins will then look at your site and handle your request.
     </p>
+    <p>You must follow our <a href="/code-of-condect">Code of Conduct</a> to be part of this webring.</p>
 
     {% include 'signupform.njk' %}
 
     <h2>Add the banner</h2>
+    <script async src="/embed.js" charset="utf-8"></script>
     <p>
-        Once you've joined the ring, copy this code snippet into your site:
+        Once you've joined the ring, embed the web component banner code shown below or build it yourself with html using the provided links below.
     </p>
 
+    <h3>Large Banner</h3>
+
     {% highlight 'html' %}{% include 'snippet.njk' %}{% endhighlight %}
+
+    <div class="my-sm">
+        <webring-banner></webring-banner>
+    </div>
+
+    <h4>Small Banner</h4>
+
+    {% highlight 'html' %}{% include 'snippet-small.njk' %}{% endhighlight %}
+
+    <div class="my-sm">
+        <webring-banner-small></webring-banner-small>
+    </div>
 
     <p>
         It will render this banner that links to the other members:
     </p>
 
-    {% include 'snippet.njk' %}
+    <h3>Build Your Own HTML</h3>
+    <p>You can also just include the image, title, and links without the web component and style it yourself.</p>
+    {% highlight 'html' %}{% include 'snippet-html.njk' %}{% endhighlight %}
 
-    <h2>Want to host your own webring?</h2>
+    <h2>Credits</h2>
     <p>
-        If you want to start your own webring, fork 
-        <a href="https://github.com/maxboeck/webring">this project</a> on Github 
-        and follow the instructions in the README.
+        This is a fork of the <a href="https://github.com/maxboeck/webring">Webring Starter Kit</a>. If you want to start your own webring, you can fork it and follow the instructions in the README.
     </p>
-
-    {% include 'github.njk' %}
 </div>

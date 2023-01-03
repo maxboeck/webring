@@ -22,12 +22,21 @@
     &__memberlist {
         max-height: 150px;
         border: 1px solid $gray-lighter;
-
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
     }
 
+    &__memberlist-header {
+        background: #666;
+        color: #fff;
+        padding: 0.25rem 0.5rem;
+    }
+
     &__member {
+        display: grid;
+        gap: .5rem;
+        padding: 0.25rem 0.5rem;
+        grid-template-columns: minmax(min-content, 45%) minmax(min-content, 45%) min-content;
         &:not(:last-child) {
             border-bottom: 1px solid $gray-lighter;
         }
@@ -38,7 +47,6 @@
 
     &__link {
         display: block;
-        padding: 0.25rem 0.5rem;
         text-decoration: none;
     }
 }

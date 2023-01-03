@@ -1,21 +1,34 @@
 <article class="webring">
-    <header class="webring__header">
+    <header class="webring__header markdown">
         <h1 class="webring__title">{{ meta.title }}</h1>
         <p>{{ meta.description }}</p>
-        <a href="/code-of-conduct">Code of Conduct</a>
+        <p>
+            <a href="/code-of-conduct">
+                <strong>Code of Conduct</strong>
+            </a>
+
+        </p>
     </header>
-        
+
     <div class="webring__body">
         <div class="webring__subtitle">
             <h2 class="h3">Members ({{ members | length }})</h2>
             <a href="/feeds.xml">RSS Feeds</a>
         </div>
+        <ol class="webring__memberlist-header">
+            <li class="webring__member">
+                <h3>Web Site</h3>
+                <h3>Social Media</h3>
+            </li>
+        </ol>
 
         <ol class="webring__memberlist">
             {% for member in members %}
-            <li class="webring__member">
-                <a href="{{ member.url }}" class="webring__link">{{ member.title }}</a>
-            </li>
+                <li class="webring__member">
+                    <a href="{{ member.url }}" class="webring__link">{{ member.title }}</a>
+                    <a href="{{ member.social }}" class="webring__link webring__social">{{ member.social }}</a>
+                    <a href="{{ member.feed }}" class="webring__link webring__rss">RSS</a>
+                </li>
             {% endfor %}
         </ol>
     </div>

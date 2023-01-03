@@ -2,6 +2,7 @@
     {
         "title": "Mirth Peddlers",
         "url": "https://www.mirthpeddlers.com/",
-        "feed": "https://www.mirthpeddlers.com/rss.xml"
+        "feed": "https://www.mirthpeddlers.com/rss.xml",
+        "social": "https://dice.camp/@colinaut"
     }
 ]
