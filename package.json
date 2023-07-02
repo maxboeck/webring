@@ -20,6 +20,7 @@
     "clean-css": "^4.2.3",
     "cssesc": "^3.0.0",
     "html-minifier": "^4.0.0",
-    "netlify-lambda": "^1.6.3"
+    "netlify-lambda": "^1.6.3",
+    "sass": "^1.63.6"
   }
 }
