@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const sass = require('node-sass')
+const sass = require('sass')
 const CleanCSS = require('clean-css')
 const cssesc = require('cssesc')
 
@@ -70,9 +70,9 @@ module.exports = class {
             font-family: monospace;
             font-size: 1.25rem;
             line-height:1.5;
-        } 
-        body::before { 
-            content: ''; 
+        }
+        body::before {
+            content: '';
             background: #000;
             top: 0;
             bottom: 0;
@@ -81,11 +81,11 @@ module.exports = class {
             opacity: 0.7;
             position: fixed;
         }
-        body::after { 
-            content: '${cssesc(error)}'; 
+        body::after {
+            content: '${cssesc(error)}';
             white-space: pre;
             display: block;
-            top: 0; 
+            top: 0;
             padding: 30px;
             margin: 50px;
             width: calc(100% - 100px);
