@@ -144,9 +144,14 @@
         "url": "https://appledog77.github.io/narry/index.html",
         "feed": null
     },
-     {
+    {
         "title": "ButtonToy",
         "url": "https://appledog77.github.io/toy/index.html",
+        "feed": null
+    },
+    {
+        "title": "haystack blog and oddities",
+        "url": "https://thatoddhaystack.neocities.org/ukagaka",
         "feed": null
     }
 ]
