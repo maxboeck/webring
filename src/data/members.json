@@ -48,5 +48,10 @@
         "title": "Rings around the Internet",
         "url": "https://fanlistings.nickifaulk.com/webrings/",
         "feed": null
+    },
+    {
+        "title": "THT's den",
+        "url": "https://theholytachanka.com",
+        "feed": "https://theholytachanka.com/atom.xml"
     }
 ]
