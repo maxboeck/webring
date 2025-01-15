@@ -1,7 +1,10 @@
 [build]
-  command = "npm run build"
+  command = "yarn build"
   publish = "dist"
-  Functions = "functions"
+  functions = ".netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
 
 [[headers]]
     for = "/*"

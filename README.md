@@ -68,5 +68,5 @@ cd webring
 yarn
 
 # start a local build server and the gulp pipeline
-yarn start
+yarn dev
 ```

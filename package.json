@@ -9,18 +9,20 @@
     "url": "http://github.com/maxboeck/webring"
   },
   "scripts": {
-    "start": "ELEVENTY_ENV=development eleventy --serve",
-    "build": "ELEVENTY_ENV=production eleventy && npm run build:lambda",
-    "serve:lambda": "netlify-lambda serve _lambda",
-    "build:lambda": "netlify-lambda build _lambda"
+    "start": "eleventy --serve",
+    "build": "eleventy && netlify functions:build --functions .netlify/functions --src _lambda",
+    "dev": "netlify dev"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.11.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "clean-css": "^4.2.3",
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "clean-css": "^5.3.3",
     "cssesc": "^3.0.0",
     "html-minifier": "^4.0.0",
-    "netlify-lambda": "^1.6.3",
-    "node-sass": "^4.14.1"
+    "sass": "^1.83.4"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+  "devDependencies": {
+    "netlify-cli": "^18.0.1"
   }
 }
