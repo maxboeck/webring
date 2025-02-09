@@ -1,52 +1,62 @@
 [
     {
-        "title": "Max Böck",
-        "url": "https://mxb.dev/",
-        "feed": "https://mxb.dev/feed.xml"
-    },
-    {
-        "title": "Manuel Matuzovic",
-        "url": "https://www.matuzo.at/",
-        "feed": "https://www.matuzo.at/feed.xml"
-    },
-    {
-        "title": "Charlie Owen",
-        "url": "https://www.sonniesedge.net/",
+        "title": "Iakovos Iason Tountas",
+        "url": "https://u2nmd.github.io/online-cv/",
         "feed": null
     },
     {
-        "title": "Björn Ganslandt",
-        "url": "https://ganslandt.xyz/",
+        "title": "Aimilios Pavlidis",
+        "url": "https://aimiliospavlidis2001.github.io/online-cv/",
         "feed": null
     },
     {
-        "title": "Jan Hrubý",
-        "url": "https://www.mrozilla.cz/",
+        "title": "Chris Livas",
+        "url": "https://chris-livas.github.io/online-cv/",
         "feed": null
     },
     {
-        "title": "Zach Leatherman",
-        "url": "https://www.zachleat.com/",
-        "feed": "https://www.zachleat.com/web/feed/"
-    },
-    {
-        "title": "Steve Gardner",
-        "url": "https://ste.vg",
+        "title": "Charalampos Sarakatsanis",
+        "url": "https://p2019sarakatsanis.github.io/online-cv/",
         "feed": null
     },
     {
-        "title": "Alan Levine",
-        "url": "https://cogdogblog.com/",
-        "feed": "https://cogdogblog.com/feed"
+        "title": "Thomas Spuridon Paschalis",
+        "url": "https://p19pasc.github.io/online-cv/",
+        "feed": null
     },
     {
-        "title": "Marius Ghita",
-        "url": "https://mhitza.github.io",
-        "feed": "https://mhitza.github.io/atom.xml"
+        "title": "Vasileios-Basir Kampani",
+        "url": "https://vasiliskampani.github.io/online-cv/",
+        "feed": null
     },
     {
-        "title": "Rings around the Internet",
-        "url": "https://fanlistings.nickifaulk.com/webrings/",
+        "title": "Christos Lachanas",
+        "url": "https://chrislach1.github.io/online-cv/",
+        "feed": null
+    },
+    {
+        "title": "Soultana Andriana Stoupi",
+        "url": "https://taniastoupi.github.io/online-cv/",
+        "feed": null
+    },
+    {
+        "title": "Konstantinos Skleparis",
+        "url": "https://p2019044.github.io/online-cv/",
+        "feed": null
+    },
+    {
+        "title": "Vasiliki Loli",
+        "url": "https://p19loli.github.io/online-cv/",
+        "feed": null
+    },
+    {
+        "title": "Peristera Karananou",
+        "url": "https://perikarananou.github.io/online-cv/",
+        "feed": null
+    },
+    {
+        "title": "",
+        "url": "",
         "feed": null
     }
 ]
