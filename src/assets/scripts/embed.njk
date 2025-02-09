@@ -9,6 +9,7 @@ class WebringBanner extends HTMLElement {
         this.url = '{{ meta.url }}';
         this.image = this.url + '/assets/images/{{ meta.image }}';
         this.membercount = {{ members | length}};
+        this.icon = this.url + '/assets/images/{{ meta.icon }}';
 
         this.shadowObj = this.attachShadow({ mode: 'open' });
         this.render();
@@ -24,7 +25,6 @@ class WebringBanner extends HTMLElement {
           :root {
             font-size: 100%;
           }
-
           :host {
             display: block;
             width: 100%;
@@ -40,18 +40,15 @@ class WebringBanner extends HTMLElement {
             box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12);
             max-width:480px;
           }
-
           .webring-banner a {
             color: #7b16ff;
             text-decoration:none;
           }
-
           .webring-banner a:hover,
           .webring-banner a:focus {
             color: #6200e2;
             text-decoration:underline;
           }
-
           .webring-banner__header {
             display:flex;
             align-items: center;
@@ -60,12 +57,10 @@ class WebringBanner extends HTMLElement {
             padding: 1rem;
             border-bottom: 1px solid #DDD;
           }
-
           .webring-banner__description {
             flex: 1 0 0%;
             padding-right: 2rem;
           }
-
           .webring-banner__image {
             display:block;
             width:70px;
@@ -73,14 +68,12 @@ class WebringBanner extends HTMLElement {
             margin-right: 1rem;
             border-radius:50%;
           }
-
           .webring-banner__title {
             margin:0;
             font-size:1.25rem;
             font-weight: bold;
             line-height:1.2;
           }
-
           .webring-banner__info {
             display:flex;
             justify-content:center;
@@ -97,7 +90,6 @@ class WebringBanner extends HTMLElement {
             top:1rem;
             right:1rem;
           }
-
           .webring-banner__links {
             display:flex;
             flex-wrap: wrap;
@@ -105,21 +97,17 @@ class WebringBanner extends HTMLElement {
             padding: 1rem;
             margin:0;
           }
-
           .webring-banner__link {
             display:block;
             text-decoration:none;
             color: #00ad9f;
           }
-
           .webring-banner__link--random {
             text-align:center;
           }
-
           .webring-banner__link--next {
             text-align:right;
           }
-
           @media (min-width:400px) {
             .webring-banner__link {
                 min-width:100px;
