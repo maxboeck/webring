@@ -1,13 +1,17 @@
 {
-    "title": "Nerds of the 90s",
-    "description": "This is just a demo of a webring. It could be about anything - Metal Bands, Knitting, Craft Beer, Accessibility... For this one, let's just say it's about the good old 90s.",
+    "title": "Chill programmer vibes",
+    "description": "A group of chill programmer vibes. You can only join if you are chill and have programmer vibes.",
     "image": "freakazoid.jpg",
-    "url": "https://webringdemo.netlify.com",
-    "repo": "https://github.com/maxboeck/webring",
+    "url": "https://chillprogrammervibes.netlify.com",
+    "repo": "https://github.com/e-hat/webring",
     "admins": [
         {
-            "name": "Max Böck",
-            "url": "https://github.com/maxboeck"
+            "name": "Eddie Hatfield",
+            "url": "https://eddiehatfield.com"
+        },
+        {
+            "name": "Yash Gaitonde",
+            "url": "https://github.com/ygaitonde"
         }
     ]
 }
