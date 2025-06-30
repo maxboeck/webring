@@ -48,5 +48,10 @@
         "title": "Rings around the Internet",
         "url": "https://fanlistings.nickifaulk.com/webrings/",
         "feed": null
+    },
+    {
+        "title": "Hedy",
+        "url": "https://home.hedy.dev/",
+        "feed": "https://home.hedy.dev/posts/index.xml"
     }
 ]
